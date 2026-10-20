@@ -35,7 +35,7 @@
 | Pro | 9 €/mes (81 €/leto) | neomejeno, ponavljajoče akcije, polne reference, 250 MB |
 | Team | 14 €/uporabnik/mes (126 €/leto) | kot Pro + delegiranje v ekipi, 1 GB/uporabnika |
 
-Stanje 7. 9.: Free "Coming soon", Pro/Team "Contact Us". Od zagona 8. 10. samopostrežna registracija (⬜ preveri, ali je nakup Pro/Team na strani že samopostrežen).
+Stanje 7. 9.: Free "Coming soon", Pro/Team "Contact Us". Od zagona 8. 10. samopostrežna registracija in samopostrežen nakup Pro in Team ✅ (delujoč nakup je bil pogoj za zagon; Vladimir, 20. 10.).
 
 **Beta:** ~15 beta uporabnikov; množično mail obveščanje je implementirano. ✅
 
