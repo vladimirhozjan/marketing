@@ -1,0 +1,260 @@
+[
+  {
+    "text": "40",
+    "start": 0.08,
+    "end": 0.41,
+    "id": "w0"
+  },
+  {
+    "text": "things,",
+    "start": 0.51,
+    "end": 1.26,
+    "id": "w1"
+  },
+  {
+    "text": "now",
+    "start": 1.26,
+    "end": 1.65,
+    "id": "w2"
+  },
+  {
+    "text": "what?",
+    "start": 1.65,
+    "end": 2.6,
+    "id": "w3"
+  },
+  {
+    "text": "One",
+    "start": 2.68,
+    "end": 2.96,
+    "id": "w4"
+  },
+  {
+    "text": "question",
+    "start": 2.96,
+    "end": 3.93,
+    "id": "w5"
+  },
+  {
+    "text": "sorts",
+    "start": 3.93,
+    "end": 4.27,
+    "id": "w6"
+  },
+  {
+    "text": "it",
+    "start": 4.27,
+    "end": 4.755,
+    "id": "w7"
+  },
+  {
+    "text": "all.",
+    "start": 4.755,
+    "end": 5.24,
+    "id": "w8"
+  },
+  {
+    "text": "Is",
+    "start": 5.24,
+    "end": 5.38,
+    "id": "w9"
+  },
+  {
+    "text": "it",
+    "start": 5.38,
+    "end": 5.57,
+    "id": "w10"
+  },
+  {
+    "text": "actionable?",
+    "start": 5.67,
+    "end": 6.9,
+    "id": "w11"
+  },
+  {
+    "text": "No,",
+    "start": 7.16,
+    "end": 7.49,
+    "id": "w12"
+  },
+  {
+    "text": "park",
+    "start": 7.59,
+    "end": 7.91,
+    "id": "w13"
+  },
+  {
+    "text": "it,",
+    "start": 7.91,
+    "end": 8.35,
+    "id": "w14"
+  },
+  {
+    "text": "file",
+    "start": 8.35,
+    "end": 8.74,
+    "id": "w15"
+  },
+  {
+    "text": "it,",
+    "start": 8.74,
+    "end": 9.24,
+    "id": "w16"
+  },
+  {
+    "text": "or",
+    "start": 9.24,
+    "end": 9.48,
+    "id": "w17"
+  },
+  {
+    "text": "trash",
+    "start": 9.67,
+    "end": 10.07,
+    "id": "w18"
+  },
+  {
+    "text": "it.",
+    "start": 10.07,
+    "end": 10.68,
+    "id": "w19"
+  },
+  {
+    "text": "Under",
+    "start": 10.76,
+    "end": 11.09,
+    "id": "w20"
+  },
+  {
+    "text": "two",
+    "start": 11.19,
+    "end": 11.42,
+    "id": "w21"
+  },
+  {
+    "text": "minutes?",
+    "start": 11.43,
+    "end": 12.34,
+    "id": "w22"
+  },
+  {
+    "text": "Don't",
+    "start": 12.48,
+    "end": 12.94,
+    "id": "w23"
+  },
+  {
+    "text": "file",
+    "start": 12.94,
+    "end": 13.37,
+    "id": "w24"
+  },
+  {
+    "text": "it,",
+    "start": 13.38,
+    "end": 13.81,
+    "id": "w25"
+  },
+  {
+    "text": "do",
+    "start": 13.81,
+    "end": 14.01,
+    "id": "w26"
+  },
+  {
+    "text": "it.",
+    "start": 14.01,
+    "end": 14.6,
+    "id": "w27"
+  },
+  {
+    "text": "Everything",
+    "start": 14.68,
+    "end": 15.38,
+    "id": "w28"
+  },
+  {
+    "text": "else",
+    "start": 15.42,
+    "end": 15.58,
+    "id": "w29"
+  },
+  {
+    "text": "gets",
+    "start": 15.85,
+    "end": 16.1,
+    "id": "w30"
+  },
+  {
+    "text": "one",
+    "start": 16.1,
+    "end": 16.26,
+    "id": "w31"
+  },
+  {
+    "text": "clear",
+    "start": 16.31,
+    "end": 16.42,
+    "id": "w32"
+  },
+  {
+    "text": "next",
+    "start": 16.42,
+    "end": 17.19,
+    "id": "w33"
+  },
+  {
+    "text": "step.",
+    "start": 17.19,
+    "end": 17.7,
+    "id": "w34"
+  },
+  {
+    "text": "Know",
+    "start": 17.8,
+    "end": 18.06,
+    "id": "w35"
+  },
+  {
+    "text": "your",
+    "start": 18.06,
+    "end": 18.4,
+    "id": "w36"
+  },
+  {
+    "text": "next",
+    "start": 18.4,
+    "end": 18.69,
+    "id": "w37"
+  },
+  {
+    "text": "action.",
+    "start": 18.97,
+    "end": 19.39,
+    "id": "w38"
+  },
+  {
+    "text": "Start",
+    "start": 19.6,
+    "end": 19.93,
+    "id": "w39"
+  },
+  {
+    "text": "free",
+    "start": 20.03,
+    "end": 20.37,
+    "id": "w40"
+  },
+  {
+    "text": "at",
+    "start": 20.37,
+    "end": 20.51,
+    "id": "w41"
+  },
+  {
+    "text": "whatsnextaction.com.",
+    "start": 20.77,
+    "end": 22.71,
+    "id": "w42"
+  }
+]

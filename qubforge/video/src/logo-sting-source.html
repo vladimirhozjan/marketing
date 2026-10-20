@@ -1,0 +1,258 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Inter;src:url(fonts/inter/extras/ttf/Inter-Bold.ttf);font-weight:700}
+@font-face{font-family:Inter;src:url(fonts/inter/extras/ttf/Inter-SemiBold.ttf);font-weight:600}
+@font-face{font-family:Inter;src:url(fonts/inter/extras/ttf/Inter-Medium.ttf);font-weight:500}
+html,body{margin:0;background:#0A0E1A}
+canvas{display:block}
+</style></head><body>
+<canvas id="c"></canvas>
+<script>
+// ---------- config (overridable via query string) ----------
+const q = new URLSearchParams(location.search);
+const W = +q.get('w') || 1080, H = +q.get('h') || 1920, FPS = +q.get('fps') || 30, DUR = +q.get('dur') || 8;
+const VARIANT = q.get('v') || 'qubforge';       // wordmark variant
+const cv = document.getElementById('c'); cv.width = W; cv.height = H;
+const ctx = cv.getContext('2d');
+const CYAN = '#00D4FF', PURPLE = '#8B5CF6', BG = '#0A0E1A';
+const isSquare = H <= W;
+// layout
+const LOGO = isSquare ? W*0.30 : W*0.34;        // logo hexagon height in px (logo units 24 → LOGO)
+const k = LOGO/24;                               // px per logo unit (logo drawn in 32-unit box, height 24)
+const cx = W/2, cy = isSquare ? H*0.40 : H*0.42; // logo center (screen)
+const GRID = isSquare ? 90 : 90;
+
+// ---------- 3D cube model ----------
+const V = [];
+for (let x=0;x<=1;x++) for (let y=0;y<=1;y++) for (let z=0;z<=1;z++) V.push([x,y,z]);
+const idx=(x,y,z)=>x*4+y*2+z;
+const FACES = [ // [vertex ids], outward normal
+  {v:[idx(1,0,0),idx(1,1,0),idx(1,1,1),idx(1,0,1)], n:[1,0,0]},
+  {v:[idx(0,0,0),idx(0,1,0),idx(0,1,1),idx(0,0,1)], n:[-1,0,0]},
+  {v:[idx(0,1,0),idx(1,1,0),idx(1,1,1),idx(0,1,1)], n:[0,1,0]},
+  {v:[idx(0,0,0),idx(1,0,0),idx(1,0,1),idx(0,0,1)], n:[0,-1,0]},
+  {v:[idx(0,0,1),idx(1,0,1),idx(1,1,1),idx(0,1,1)], n:[0,0,1]},
+  {v:[idx(0,0,0),idx(1,0,0),idx(1,1,0),idx(0,1,0)], n:[0,0,-1]},
+];
+// edges with adjacent faces
+const EDGES = {};
+FACES.forEach((f,fi)=>{ for(let i=0;i<4;i++){ const a=f.v[i], b=f.v[(i+1)%4]; const key=a<b?a+'-'+b:b+'-'+a; (EDGES[key]=EDGES[key]||{a:Math.min(a,b),b:Math.max(a,b),f:[]}).f.push(fi);} });
+const EDGE_LIST = Object.values(EDGES);
+// Q tail: segment through midpoint of edge (1,0,0)-(1,0,1), in x-y plane at z=0.5 (solved from the SVG)
+const TAIL = [[1.0,0.333,0.667],[1.0,-0.333,0.333]];   // lies on the +x face plane (x=1)
+const TAIL_FACES = [0]; // belongs to +x face (visible when +x face is front-facing)
+
+// rotation about unit axis AX through the cube centre (Rodrigues). Default axis = screen-vertical body diagonal → "diamond on a stand".
+const AXMODE = q.get('axis') || 'diag';   // the mark's vertical axis = screen-vertical body diagonal (top vertex → bottom vertex stay fixed)
+const AX = AXMODE==='y' ? [0,1,0] : [1/Math.sqrt(3), -1/Math.sqrt(3), 1/Math.sqrt(3)];
+function rotV(v, th){ const c=Math.cos(th), s=Math.sin(th), [ax,ay,az]=AX; const d=ax*v[0]+ay*v[1]+az*v[2];
+  const cr=[ay*v[2]-az*v[1], az*v[0]-ax*v[2], ax*v[1]-ay*v[0]];
+  return [v[0]*c+cr[0]*s+ax*d*(1-c), v[1]*c+cr[1]*s+ay*d*(1-c), v[2]*c+cr[2]*s+az*d*(1-c)]; }
+function rotY(p, th){ return rotV([p[0]-0.5,p[1]-0.5,p[2]-0.5], th); }   // centered coords
+const C30=Math.cos(Math.PI/6), S30=0.5;
+function proj(p){ // isometric, centered coords → screen px (relative to logo center); k px per logo unit, cube side = 12 logo units
+  const s=12*k; return [cx + (p[0]-p[2])*C30*s, cy - p[1]*s + (p[0]+p[2])*S30*s]; }
+const VIEW=[1,1,1];
+const dot=(a,b)=>a[0]*b[0]+a[1]*b[1]+a[2]*b[2];
+function convexHull(pts){ const p=pts.slice().sort((a,b)=>a[0]-b[0]||a[1]-b[1]); const cr=(o,a,b)=>(a[0]-o[0])*(b[1]-o[1])-(a[1]-o[1])*(b[0]-o[0]);
+  const lo=[]; for(const q of p){ while(lo.length>=2&&cr(lo[lo.length-2],lo[lo.length-1],q)<=0) lo.pop(); lo.push(q);} 
+  const up=[]; for(const q of p.reverse()){ while(up.length>=2&&cr(up[up.length-2],up[up.length-1],q)<=0) up.pop(); up.push(q);} 
+  return lo.slice(0,-1).concat(up.slice(0,-1)); }
+
+// ---------- helpers ----------
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const ease=t=>{t=clamp(t,0,1);return t<0.5?2*t*t:-1+(4-2*t)*t;};
+function grad(x0,y0,x1,y1,a=1){ const g=ctx.createLinearGradient(x0,y0,x1,y1); g.addColorStop(0,hexA(CYAN,a)); g.addColorStop(1,hexA(PURPLE,a)); return g; }
+function hexA(h,a){ const r=parseInt(h.slice(1,3),16),g=parseInt(h.slice(3,5),16),b=parseInt(h.slice(5,7),16); return `rgba(${r},${g},${b},${a})`; }
+
+// ---------- signals (laser lines on grid), deterministic ----------
+function mulberry(seed){ return function(){ seed|=0; seed=seed+0x6D2B79F5|0; let t=Math.imul(seed^seed>>>15,1|seed); t=t+Math.imul(t^t>>>7,61|t)^t; return ((t^t>>>14)>>>0)/4294967296; } }
+const rnd = mulberry(7);
+const SIG = [];
+const nH = isSquare?4:5, nV = isSquare?4:5;
+for(let i=0;i<nH;i++){ SIG.push({h:true, dir:rnd()<0.5?1:-1, line:Math.floor(rnd()*(H/GRID)), speed:110+rnd()*90, t0:-rnd()*12, period:9+rnd()*6}); }
+for(let i=0;i<nV;i++){ SIG.push({h:false,dir:rnd()<0.5?1:-1, line:Math.floor(rnd()*(W/GRID)), speed:110+rnd()*90, t0:-rnd()*12, period:9+rnd()*6}); }
+const SIGLEN=240;
+// end signals: same speed as the others (150 px/s), same look, same mask; timed so they cross the centre region in the last second
+{ const logoTop = cy - LOGO/2, END = DUR - 0.2, SPD = 150;
+  const rowY = Math.round(logoTop*0.45/GRID);                      // horizontal purple, left → right, upper grid area
+  SIG.push({h:true, dir:1, line:rowY, speed:SPD, t0: END - (cx + 120 + SIGLEN)/SPD, period:1e6});
+  const colX = Math.round((cx + LOGO*0.30)/GRID);                  // vertical cyan, top → down, right of centre
+  SIG.push({h:false, dir:1, line:colX, speed:SPD, t0: END - (logoTop*0.92 + SIGLEN)/SPD, period:1e6}); }
+function drawSignalsOn(ctx, t){
+  for(const s of SIG){
+    const L = (s.h?W:H)+SIGLEN*2;
+    const u = ((t - s.t0) % s.period + s.period) % s.period;      // time within period
+    const d = u*s.speed; if (d>L) continue;                          // idle rest of period
+    const head = s.dir>0 ? d - SIGLEN : L - d + SIGLEN;              // head position along axis
+    const col = s.h?PURPLE:CYAN;
+    let g;
+    if (s.h){ const y=s.line*GRID+0.5; const x0=head-(s.dir>0?SIGLEN:-SIGLEN), x1=head; g=ctx.createLinearGradient(x0,0,x1,0);
+      g.addColorStop(0,hexA(col,0)); g.addColorStop(0.5,hexA(col,0.1)); g.addColorStop(0.75,hexA(col,0.4)); g.addColorStop(0.95,hexA(col,1)); g.addColorStop(1,'#fff');
+      ctx.fillStyle=g; ctx.fillRect(Math.min(x0,x1),y-1,SIGLEN,2); }
+    else { const x=s.line*GRID+0.5; const y0=head-(s.dir>0?SIGLEN:-SIGLEN), y1=head; g=ctx.createLinearGradient(0,y0,0,y1);
+      g.addColorStop(0,hexA(col,0)); g.addColorStop(0.5,hexA(col,0.1)); g.addColorStop(0.75,hexA(col,0.4)); g.addColorStop(0.95,hexA(col,1)); g.addColorStop(1,'#fff');
+      ctx.fillStyle=g; ctx.fillRect(x-1,Math.min(y0,y1),2,SIGLEN); }
+  }
+}
+
+// ---------- end beams: two laser signals cross the frame behind the body in the last second ----------
+function drawEndBeams(t){
+  const T0 = DUR - 0.85;
+  const snap=v=>Math.round(v/GRID)*GRID+0.5;
+  const beams=[ {h:true,  pos:snap(cy-LOGO*0.12), dir:1,  t0:T0,      dur:0.62},   // purple, left → right, just above the body's centre
+                {h:false, pos:snap(cx+LOGO*0.30), dir:-1, t0:T0+0.18, dur:0.62} ]; // cyan, bottom → top, right of centre
+  for(const b of beams){
+    const u=(t-b.t0)/b.dur; if(u<0||u>1) continue;
+    const BL=SIGLEN*1.6; const L=(b.h?W:H)+BL*2; const d=u*L; const head=b.dir>0? d-BL : L-d+BL;
+    const col=b.h?PURPLE:CYAN; let g;
+    ctx.save();
+    if(b.h){ const x0=head-(b.dir>0?BL:-BL), x1=head; g=ctx.createLinearGradient(x0,0,x1,0);
+      g.addColorStop(0,hexA(col,0)); g.addColorStop(0.5,hexA(col,0.12)); g.addColorStop(0.75,hexA(col,0.45)); g.addColorStop(0.95,hexA(col,1)); g.addColorStop(1,'#fff');
+      ctx.fillStyle=g; ctx.shadowColor=hexA(col,0.7); ctx.shadowBlur=18; ctx.fillRect(Math.min(x0,x1),b.pos-1.5,BL,3); }
+    else { const y0=head-(b.dir>0?BL:-BL), y1=head; g=ctx.createLinearGradient(0,y0,0,y1);
+      g.addColorStop(0,hexA(col,0)); g.addColorStop(0.5,hexA(col,0.12)); g.addColorStop(0.75,hexA(col,0.45)); g.addColorStop(0.95,hexA(col,1)); g.addColorStop(1,'#fff');
+      ctx.fillStyle=g; ctx.shadowColor=hexA(col,0.7); ctx.shadowBlur=18; ctx.fillRect(b.pos-1.5,Math.min(y0,y1),3,BL); }
+    ctx.restore();
+  }
+}
+
+// ---------- background ----------
+function drawBackground(t, a){
+  ctx.fillStyle=BG; ctx.fillRect(0,0,W,H);
+  // orbs
+  ctx.save(); ctx.globalAlpha=0.22*a; ctx.filter='blur(64px)';
+  let o=ctx.createRadialGradient(W*0.05,H*0.05,0,W*0.05,H*0.05,W*0.5); o.addColorStop(0,CYAN); o.addColorStop(0.7,'rgba(0,0,0,0)'); ctx.fillStyle=o; ctx.fillRect(0,0,W,H);
+  o=ctx.createRadialGradient(W*0.95,H*0.85,0,W*0.95,H*0.85,W*0.5); o.addColorStop(0,PURPLE); o.addColorStop(0.7,'rgba(0,0,0,0)'); ctx.fillStyle=o; ctx.fillRect(0,0,W,H);
+  ctx.restore();
+  // grid with radial mask from top (site: radial 70% 50% at 50% 0%, fade to 60%)
+  ctx.save();
+  const gcv=document.createElement('canvas'); gcv.width=W; gcv.height=H; const g=gcv.getContext('2d');
+  g.strokeStyle='rgba(255,255,255,0.16)'; g.lineWidth=1;
+  for(let x=0.5;x<W;x+=GRID){ g.beginPath(); g.moveTo(x,0); g.lineTo(x,H); g.stroke(); }
+  for(let y=0.5;y<H;y+=GRID){ g.beginPath(); g.moveTo(0,y); g.lineTo(W,y); g.stroke(); }
+  drawSignalsOn(g, t);                                   // lasers live on the grid layer → same mask
+  g.globalCompositeOperation='destination-in';
+  const logoTop = cy - LOGO/2;                            // grid (and lasers) fade out exactly at the logo's top edge
+  const m=g.createLinearGradient(0,0,0,logoTop); m.addColorStop(0,'rgba(0,0,0,1)'); m.addColorStop(0.55,'rgba(0,0,0,0.85)'); m.addColorStop(1,'rgba(0,0,0,0)'); g.fillStyle=m; g.fillRect(0,0,W,H);
+  ctx.globalAlpha=a; ctx.drawImage(gcv,0,0);
+  ctx.restore();
+}
+
+// ---------- logo: 3D model (glass cube + edge tubes + Q bar), painter's algorithm ----------
+const LIGHT=(()=>{const l=[-0.45,0.85,0.35]; const n=Math.hypot(...l); return l.map(v=>v/n);})();
+const VIEWN=[1/Math.sqrt(3),1/Math.sqrt(3),1/Math.sqrt(3)];
+const HALF=(()=>{const h=[LIGHT[0]+VIEWN[0],LIGHT[1]+VIEWN[1],LIGHT[2]+VIEWN[2]]; const n=Math.hypot(...h); return h.map(v=>v/n);})();
+function mixHex(c1,c2,t){ const p=h=>[parseInt(h.slice(1,3),16),parseInt(h.slice(3,5),16),parseInt(h.slice(5,7),16)]; const a=p(c1),b=p(c2); return a.map((v,i)=>Math.round(v+(b[i]-v)*t)); }
+function gradAt(x,y,bx0,by0,bx1,by1){ const u=clamp(((x-bx0)+(y-by0))/((bx1-bx0)+(by1-by0)),0,1); return mixHex(CYAN,PURPLE,u); }
+function drawLogo(th, a, glowBoost, sheenP=-1){
+  const P = V.map(p=>rotY(p,th));
+  const S = P.map(proj);
+  const N = FACES.map(f=>rotV(f.n,th));
+  const front = N.map(n=>dot(n,VIEW)>1e-6);
+  const xs=S.map(s=>s[0]), ys=S.map(s=>s[1]);
+  const bx0=Math.min(...xs), bx1=Math.max(...xs), by0=Math.min(...ys), by1=Math.max(...ys);
+  const stroke = grad(bx0,by0,bx1,by1,1);
+  const wOuter = 2*k, wInner = 0.5*k;
+  // Q tail = rigid 3D spoke of the body: on the line through the cube centre and the midpoint of the bottom-right edge
+  // (direction (1,-1,0)/√2 in the body frame), from r=0.577 (inside, over the face) to r=1.155 (outside; at rest level with the body's lowest point).
+  const dBody=[Math.SQRT1_2,-Math.SQRT1_2,0]; const dRot=rotV(dBody,th);
+  const T=[0.4714,0.9428].map(r=>proj([dRot[0]*r, dRot[1]*r, dRot[2]*r]));   // projects exactly to the SVG's (19.468,22)→(22.932,28)
+  const tailFront = true;                          // the whole Q tail is always drawn on top (Vladimir, 14. 9.)
+  const silh=[], inner=[], hidden=[];
+  for(const e of EDGE_LIST){ const c=e.f.filter(fi=>front[fi]).length; if(c===1) silh.push(e); else if(c===2) inner.push(e); else hidden.push(e); }
+  const facePath=(f)=>{ ctx.beginPath(); f.v.forEach((vi,i)=>{ const s=S[vi]; i?ctx.lineTo(s[0],s[1]):ctx.moveTo(s[0],s[1]); }); ctx.closePath(); };
+  const edgePath=(list)=>{ ctx.beginPath(); for(const e of list){ ctx.moveTo(S[e.a][0],S[e.a][1]); ctx.lineTo(S[e.b][0],S[e.b][1]); } };
+  const tailPath=()=>{ ctx.beginPath(); ctx.moveTo(T[0][0],T[0][1]); ctx.lineTo(T[1][0],T[1][1]); };
+  const shadeFace=(fi)=>{ const n=N[fi]; const L=Math.max(0,dot(n,LIGHT)); const spec=Math.pow(Math.max(0,dot(n,HALF)),24);
+    const f=FACES[fi]; let cxm=0,cym=0; f.v.forEach(vi=>{cxm+=S[vi][0]/4; cym+=S[vi][1]/4;});
+    const g=gradAt(cxm,cym,bx0,by0,bx1,by1); const bg=[10,14,26];
+    const t=0.08+0.34*L; const col=bg.map((v,i)=>Math.round(v+(g[i]-v)*t)); return {col,spec}; };
+  ctx.save(); ctx.globalAlpha=a; ctx.lineJoin='round'; ctx.lineCap='round';
+  // solid body: only front faces are drawn (back faces, hidden edges and a hidden tail are occluded)
+  FACES.forEach((f,fi)=>{ if(!front[fi]) return; const {col,spec}=shadeFace(fi);
+    ctx.fillStyle=`rgba(${col[0]},${col[1]},${col[2]},0.96)`; facePath(f); ctx.fill();
+    if(spec>0.02){ let cxm=0,cym=0; f.v.forEach(vi=>{cxm+=S[vi][0]/4; cym+=S[vi][1]/4;}); const r=LOGO*0.42;
+      const rg=ctx.createRadialGradient(cxm-r*0.25,cym-r*0.25,0,cxm,cym,r); rg.addColorStop(0,`rgba(255,255,255,${0.16*spec})`); rg.addColorStop(1,'rgba(255,255,255,0)');
+      ctx.save(); facePath(f); ctx.clip(); ctx.fillStyle=rg; ctx.fillRect(cxm-r,cym-r,2*r,2*r); ctx.restore(); } });
+  // 4) inner edges (thin, as in the mark)
+  ctx.strokeStyle=stroke; ctx.lineWidth=Math.max(1.2,wInner); edgePath(inner); ctx.stroke();
+  // 5) silhouette edges + front tail: soft wide glow, then solid
+  ctx.shadowColor='rgba(0,212,255,'+(0.45+0.25*glowBoost)+')'; ctx.shadowBlur=(50*k/5)*(1+0.5*glowBoost);
+  ctx.lineWidth=wOuter; edgePath(silh); ctx.stroke();
+  ctx.shadowBlur=0; edgePath(silh); ctx.stroke();
+  // 6) Q bar: a rigid part of the body lying on the +x face. In front → drawn on top; behind → only what pokes out past the body's silhouette.
+  const drawTail=()=>{ ctx.lineCap='round'; ctx.lineWidth=wOuter; ctx.strokeStyle=stroke; ctx.shadowColor='rgba(0,212,255,'+(0.45+0.25*glowBoost)+')'; ctx.shadowBlur=(50*k/5)*(1+0.5*glowBoost); tailPath(); ctx.stroke(); ctx.shadowBlur=0; tailPath(); ctx.stroke(); ctx.lineCap='round'; };
+  if(tailFront){ drawTail(); }
+  else { const hull=convexHull(S); ctx.save(); ctx.beginPath(); ctx.rect(0,0,W,H); hull.forEach((p,i)=>i?ctx.lineTo(p[0],p[1]):ctx.moveTo(p[0],p[1])); ctx.closePath(); ctx.clip('evenodd'); drawTail(); ctx.restore(); }
+  // 7) diamond sheen (last second): a soft band of light sweeps along every edge top-left → bottom-right;
+  //    where it crosses a vertex, a small intense point highlight with a thin anamorphic streak — no cartoon stars.
+  if(sheenP>=0){
+    const dx=bx1-bx0, dy=by1-by0; const L=Math.hypot(dx,dy); const ux=dx/L, uy=dy/L;
+    const pe = sheenP<0.5 ? 2*sheenP*sheenP : -1+(4-2*sheenP)*sheenP;       // ease in-out
+    const pos=-0.12+pe*1.24;                                                  // band centre along the diagonal
+    const g=ctx.createLinearGradient(bx0,by0,bx1,by1);
+    const c=clamp(pos,0,1), wdt=0.16;
+    const stops=[[-1,0],[-0.6,0.08],[-0.3,0.35],[0,0.85],[0.3,0.35],[0.6,0.08],[1,0]];
+    g.addColorStop(0,'rgba(255,255,255,0)');
+    for(const [o,al] of stops){ const x=clamp(c+o*wdt,0,1); g.addColorStop(x,`rgba(235,250,255,${al})`); }
+    g.addColorStop(1,'rgba(255,255,255,0)');
+    ctx.save(); ctx.globalAlpha=a; ctx.lineCap='round'; ctx.lineJoin='round'; ctx.strokeStyle=g;
+    ctx.shadowColor='rgba(200,240,255,0.55)'; ctx.shadowBlur=22*k/5;
+    ctx.lineWidth=wOuter; edgePath(silh); ctx.stroke(); tailPath(); ctx.stroke();
+    ctx.lineWidth=Math.max(1.2,wInner)*1.4; edgePath(inner); ctx.stroke();
+    ctx.shadowBlur=0;
+    // (point highlights at the vertices removed — Vladimir, 14. 9.: only the travelling sheen along the edges)
+    ctx.restore();
+  }
+  ctx.restore();
+}
+
+// ---------- text ----------
+function drawText(a, rise){
+  if(a<=0) return;
+  ctx.save(); ctx.globalAlpha=a; ctx.textAlign='center'; ctx.textBaseline='alphabetic';
+  const y0 = cy + LOGO*0.5 + (isSquare? W*0.11 : W*0.17) + rise;
+  // wordmark
+  const fs = isSquare? W*0.105 : W*0.115;
+  ctx.font=`700 ${fs}px Inter`;
+  const w1=ctx.measureText('Qub').width, w2=ctx.measureText('Forge').width, tot=w1+w2;
+  const x0=cx-tot/2;
+  ctx.textAlign='left';
+  ctx.fillStyle=grad(x0,y0-fs,x0+w1,y0,1); ctx.fillText('Qub',x0,y0);
+  ctx.fillStyle='#fff'; ctx.fillText('Forge',x0+w1,y0);
+  // tagline
+  const ts = isSquare? W*0.044 : W*0.05;
+  ctx.font=`600 ${ts}px Inter`; ctx.textAlign='center';
+  const y1 = y0 + ts*1.7;
+  const t1='Forging intelligent', t2='software solutions';
+  if(isSquare){ // one line
+    const a1=ctx.measureText(t1+' ').width, a2=ctx.measureText(t2).width, T=a1+a2, x=cx-T/2; ctx.textAlign='left';
+    ctx.fillStyle='#fff'; ctx.fillText(t1+' ',x,y1);
+    ctx.fillStyle=grad(x+a1,y1-ts,x+a1+a2,y1,1); ctx.fillText(t2,x+a1,y1);
+  } else {
+    ctx.fillStyle='#fff'; ctx.fillText(t1,cx,y1);
+    const a2=ctx.measureText(t2).width; ctx.fillStyle=grad(cx-a2/2,y1,cx+a2/2,y1+ts*1.3,1); ctx.fillText(t2,cx,y1+ts*1.25);
+  }
+  ctx.restore();
+}
+
+// ---------- timeline (seconds; overridable: rot=turn duration, text=text-in). Logo and background are fully visible from frame 0.
+const ROT_END = +q.get('rot') || DUR, TEXT_IN = +q.get('text') || 1.1, SHEEN_T = DUR - 1.0;
+window.render = function(frame){
+  const t = frame/FPS;
+  const DIR = +q.get('dir') || 1;
+  const th = DIR*2*Math.PI * clamp(t/ROT_END, 0, 1);                        // one full linear turn, then hold
+  const textA = ease((t-TEXT_IN)/0.6);
+  const rise = (1-ease((t-TEXT_IN)/0.7))*40;
+  const sheenP = t >= SHEEN_T ? clamp((t-SHEEN_T)/0.8, 0, 1) : -1;          // diamond sheen sweeps across the mark in the last second
+  drawBackground(t, 1);
+  drawLogo(th, 1, 0, sheenP);
+  drawText(textA, rise);
+  return true;
+};
+window.TOTAL_FRAMES = Math.round(DUR*FPS);
+Promise.all([document.fonts.load('700 100px Inter'), document.fonts.load('600 100px Inter'), document.fonts.load('500 100px Inter')])
+  .then(()=>document.fonts.ready).then(()=>{ window.FONTS_READY=true; render(0); });
+</script></body></html>

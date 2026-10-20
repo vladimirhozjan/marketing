@@ -1,0 +1,77 @@
+<!doctype html>
+<!--
+  WhatsNextAction brand assets with the G4 logo ("wn" + chevron), geometry from ../logo/logo-G4.svg.
+  ?kind=avatar|watermark|card|banner|intro|wide&w=&h=   (window size = w x h, see README.md)
+  On the teal background the logo is inverted (white circle, teal "wn", chevron #0891b2), as in ../og-image.
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: "Montserrat"; src: url("fonts/Montserrat-VariableFont_wght.ttf") format("truetype"); font-weight: 100 900; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { overflow: hidden; background: transparent; position: relative; }
+  .bg { position: absolute; inset: 0; background: linear-gradient(135deg, #164e63 0%, #0e7490 100%); }
+  .mark { position: absolute; display: block; }
+  .t { font-family: "Montserrat"; color: #fff; white-space: nowrap; line-height: 1; -webkit-font-smoothing: antialiased; }
+</style>
+</head>
+<body>
+<script>
+const q = new URLSearchParams(location.search);
+const kind = q.get("kind") || "avatar";
+const W = +q.get("w"), H = +q.get("h");
+document.documentElement.style.width = document.body.style.width = W + "px";
+document.documentElement.style.height = document.body.style.height = H + "px";
+const G = '<defs><linearGradient id="g" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#164e63"/><stop offset="1" stop-color="#0e7490"/></linearGradient></defs>';
+const WN = 'm 7.75,25 4.5,15 4.5,-11 4.5,11 4.5,-15 M 31,40 v -9.5 c 0,-4 2.6,-6.5 6.5,-6.5 3.9,0 6.5,2.5 6.5,6.5 V 40';
+// base: "square" (gradient fills the square), "circle" (teal circle), "inverted" (white circle, teal letters)
+function mark(base, size, x, y) {
+  const bg = base === "square" ? '<rect width="64" height="64" fill="url(#g)"/>'
+           : base === "circle" ? '<circle cx="32" cy="32" r="32" fill="url(#g)"/>'
+           : '<circle cx="32" cy="32" r="32" fill="#fff"/>';
+  const ink = base === "inverted" ? "url(#g)" : "#ffffff";
+  const chev = base === "inverted" ? "#0891b2" : "#22d3ee";
+  const shadow = base === "inverted" ? 'filter:drop-shadow(0 ' + size * 0.04 + 'px ' + size * 0.08 + 'px rgba(4,20,30,0.35));' : "";
+  return '<svg class="mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="' + shadow + 'width:' + size + 'px;height:' + size + 'px;left:' + x + 'px;top:' + y + 'px">' + G + bg +
+    '<g transform="matrix(0.96618358,0,0,0.96618358,-0.93537314,1.0231998)"><path d="' + WN + '" fill="none" stroke="' + ink + '" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>' +
+    '<polyline points="49,25.25 60,33 49,40.75" transform="translate(0.9807692,-1)" fill="none" stroke="' + chev + '" stroke-width="5.2" stroke-linejoin="round" stroke-linecap="round"/></g></svg>';
+}
+const text = (s, px, weight, x, y, alpha, align) =>
+  '<div class="t" style="position:absolute;font-size:' + px + 'px;font-weight:' + weight + ';color:rgba(255,255,255,' + alpha + ');' +
+  (align === "center" ? 'left:0;right:0;text-align:center;' : 'left:' + x + 'px;') + 'top:' + y + 'px">' + s + '</div>';
+let html = "";
+if (kind === "avatar") html = mark("square", W, 0, 0);
+if (kind === "watermark") html = mark("circle", W, 0, 0);
+if (kind === "card") { const s = W * 0.86; html = mark("inverted", s, (W - s) / 2, (W - s) / 2 - W * 0.02); }
+if (kind === "banner") {
+  // safe area 1546 x 423 centred
+  const L = 50 * W / 2560, logo = 300, gap = 70, x0 = (W - 1546) / 2 + 150, y0 = (H - logo) / 2;
+  html = '<div class="bg"></div><div id="grp" style="position:absolute;inset:0">' + mark("inverted", logo, x0, y0) +
+    text("WhatsNextAction", 118, 600, x0 + logo + gap, y0 + 52, 1) +
+    text("Know your next action.", 56, 400, x0 + logo + gap, y0 + 192, 0.9) +
+    text("whatsnextaction.com", 36, 400, x0 + logo + gap, y0 + 268, 0.7) + '</div>';
+}
+if (kind === "wide") {
+  // horizontal logo for light surfaces (Stripe, Paywiser): teal circle + dark teal wordmark, transparent background
+  const logo = H * 0.8, y0 = H * 0.1;
+  html = mark("circle", logo, H * 0.1, y0) +
+    '<div class="t" style="position:absolute;left:' + (H * 0.1 + logo + H * 0.22) + 'px;top:' + (H * 0.5 - H * 0.2) + 'px;font-size:' + H * 0.4 + 'px;font-weight:600;color:#164e63">WhatsNextAction</div>';
+}
+if (kind === "intro") {
+  const logo = W * 0.30;
+  html = '<div class="bg"></div>' + mark("inverted", logo, (W - logo) / 2, H * 0.24) +
+    text("WhatsNextAction", W * 0.078, 600, 0, H * 0.24 + logo + H * 0.08, 1, "center") +
+    text("Know your next action.", W * 0.038, 400, 0, H * 0.24 + logo + H * 0.08 + W * 0.115, 0.9, "center");
+}
+document.body.insertAdjacentHTML("beforeend", html);
+// banner: centre the logo + text group horizontally once the font is in
+if (kind === "banner") document.fonts.ready.then(() => {
+  const grp = document.getElementById("grp");
+  let l = 1e9, r = -1e9;
+  for (const el of grp.children) { const b = el.getBoundingClientRect(); l = Math.min(l, b.left); r = Math.max(r, b.right); }
+  grp.style.transform = "translateX(" + ((W - (r - l)) / 2 - l) + "px)";
+});
+</script>
+</body>
+</html>

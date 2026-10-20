@@ -1,0 +1,44 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Inter;src:url(fonts/inter/extras/ttf/Inter-Bold.ttf);font-weight:700}
+@font-face{font-family:Inter;src:url(fonts/inter/extras/ttf/Inter-SemiBold.ttf);font-weight:600}
+@font-face{font-family:Inter;src:url(fonts/inter/extras/ttf/Inter-Medium.ttf);font-weight:500}
+html,body{margin:0;background:#000}
+canvas{display:block}
+</style></head><body>
+<canvas id="c"></canvas>
+<script>
+const q=new URLSearchParams(location.search); const KIND=q.get('kind')||'avatar';
+const W=+q.get('w')||1024, H=+q.get('h')||1024;
+const cv=document.getElementById('c'); cv.width=W; cv.height=H; const ctx=cv.getContext('2d');
+const C1='#164e63', C2='#0e7490', CY='#0891b2';
+// bolt path from the site's favicon (viewBox 0 0 28 28)
+function bolt(x,y,s,color){ ctx.save(); ctx.translate(x,y); ctx.scale(s/28,s/28); const p=new Path2D('M15 4L7 16h6.5L13 24 21 12h-6.5L15 4z'); ctx.fillStyle=color; ctx.fill(p); ctx.restore(); }
+function grad(){ const g=ctx.createLinearGradient(0,0,W,H); g.addColorStop(0,C1); g.addColorStop(1,C2); return g; }
+function draw(){
+  if(KIND==='avatar'){
+    ctx.fillStyle=grad(); ctx.fillRect(0,0,W,H);
+    // soft highlight top-left
+    const r=ctx.createRadialGradient(W*0.3,H*0.25,0,W*0.3,H*0.25,W*0.8); r.addColorStop(0,'rgba(255,255,255,0.12)'); r.addColorStop(1,'rgba(255,255,255,0)'); ctx.fillStyle=r; ctx.fillRect(0,0,W,H);
+    const s=W*0.70; bolt((W-s)/2,(H-s)/2,s,'#ffffff');
+  }
+  if(KIND==='banner'){ // YouTube 2560x1440, safe area 1546x423 centred
+    ctx.fillStyle=grad(); ctx.fillRect(0,0,W,H);
+    const r=ctx.createRadialGradient(W*0.75,H*0.3,0,W*0.75,H*0.3,W*0.6); r.addColorStop(0,'rgba(255,255,255,0.10)'); r.addColorStop(1,'rgba(255,255,255,0)'); ctx.fillStyle=r; ctx.fillRect(0,0,W,H);
+    const cx=W/2, cy=H/2;
+    const s=300; bolt(cx-560-s/2, cy-s/2, s, '#ffffff');
+    ctx.fillStyle='#fff'; ctx.textBaseline='alphabetic'; ctx.textAlign='left';
+    ctx.font='700 150px Inter'; ctx.fillText('WhatsNextAction', cx-330, cy+10);
+    ctx.font='500 64px Inter'; ctx.fillStyle='rgba(255,255,255,0.85)'; ctx.fillText('Know your next action.', cx-326, cy+100);
+    ctx.font='500 40px Inter'; ctx.fillStyle='rgba(255,255,255,0.55)'; ctx.fillText('whatsnextaction.com', cx-326, cy+165);
+  }
+  if(KIND==='square'){ // 1080x1080 profile intro / placeholder post
+    ctx.fillStyle=grad(); ctx.fillRect(0,0,W,H);
+    const s=360; bolt((W-s)/2, H*0.22, s, '#ffffff');
+    ctx.fillStyle='#fff'; ctx.textAlign='center';
+    ctx.font='700 96px Inter'; ctx.fillText('WhatsNextAction', W/2, H*0.66);
+    ctx.font='500 44px Inter'; ctx.fillStyle='rgba(255,255,255,0.85)'; ctx.fillText('Know your next action.', W/2, H*0.66+80);
+  }
+}
+Promise.all([document.fonts.load('700 100px Inter'),document.fonts.load('500 100px Inter')]).then(()=>document.fonts.ready).then(()=>{draw(); window.READY=true;});
+</script></body></html>

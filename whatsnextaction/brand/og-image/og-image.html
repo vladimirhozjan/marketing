@@ -1,0 +1,69 @@
+<!doctype html>
+<!--
+  WhatsNextAction og-image (1200x630), social share card.
+  Output: wna_web/develop-a/src/main-app/public/og-image.png
+  Re-render: see README.md in this folder.
+  Logo: inverted G4 (white circle, "wn" in the teal gradient, chevron › #0891b2 = cyan-600, the light-surface shade of the #22d3ee accent, 3.7:1 on white). Geometry from ../logo/logo-G4.svg.
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: "Montserrat"; src: url("fonts/Montserrat-VariableFont_wght.ttf") format("truetype"); font-weight: 100 900; }
+  @font-face { font-family: "Libre Bodoni"; src: url("fonts/LibreBodoni-VariableFont_wght.ttf") format("truetype"); font-weight: 400 700; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  #card {
+    position: relative; width: 1200px; height: 630px;
+    background: linear-gradient(135deg, #164e63 0%, #0e7490 100%);
+    color: #fff; -webkit-font-smoothing: antialiased;
+  }
+  #logo { position: absolute; left: 96px; top: 63px; width: 88px; height: 88px; display: block; }
+  .t { position: absolute; left: 0; white-space: nowrap; line-height: 1; }
+  #wordmark { font-family: "Montserrat"; font-weight: 600; font-size: 40.9px; }
+  #headline { font-family: "Libre Bodoni"; font-weight: 700; font-size: 96.2px; line-height: 102px; }
+  #sub { font-family: "Montserrat"; font-weight: 400; font-size: 40px; color: rgba(255,255,255,0.9); }
+  #url { font-family: "Montserrat"; font-weight: 400; font-size: 28.2px; color: rgba(255,255,255,0.75); }
+</style>
+</head>
+<body>
+<div id="card">
+  <svg id="logo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#164e63"/><stop offset="1" stop-color="#0e7490"/></linearGradient></defs>
+    <circle cx="32" cy="32" r="32" fill="#fff"/>
+    <g transform="matrix(0.96618358,0,0,0.96618358,-0.93537314,1.0231998)">
+      <path d="m 7.75,25 4.5,15 4.5,-11 4.5,11 4.5,-15 M 31,40 v -9.5 c 0,-4 2.6,-6.5 6.5,-6.5 3.9,0 6.5,2.5 6.5,6.5 V 40" fill="none" stroke="url(#g)" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <polyline id="chev" points="49,25.25 60,33 49,40.75" transform="translate(0.9807692,-1)" fill="none" stroke="#0891b2" stroke-width="5.2" stroke-linejoin="round" stroke-linecap="round"/>
+    </g>
+  </svg>
+  <div class="t" id="wordmark">WhatsNextAction</div>
+  <div class="t" id="headline">Stress-Free<br>Productivity</div>
+  <div class="t" id="sub">With a system you can trust.</div>
+  <div class="t" id="url">whatsnextaction.com</div>
+</div>
+<script>
+  // Positions are set by the measured ink box (left edge, cap/ascender top) so they match the original card.
+  const place = (id, x, y) => {
+    const el = document.getElementById(id);
+    el.style.left = "0px"; el.style.top = "0px";
+    // canvas-measured ink box of the first line
+    const cs = getComputedStyle(el);
+    const c = document.createElement("canvas").getContext("2d");
+    c.font = `${cs.fontWeight} ${cs.fontSize} "${cs.fontFamily.replace(/"/g, "")}"`;
+    const first = el.innerText.split("\n")[0];
+    const m = c.measureText(first);
+    const half = (parseFloat(cs.lineHeight) - (m.fontBoundingBoxAscent + m.fontBoundingBoxDescent)) / 2;
+    const inkTop = half + m.fontBoundingBoxAscent - m.actualBoundingBoxAscent;
+    el.style.left = (x + m.actualBoundingBoxLeft) + "px";
+    el.style.top = (y - inkTop) + "px";
+  };
+  document.fonts.ready.then(() => {
+    place("wordmark", 209, 90);
+    place("headline", 98, 208);
+    place("sub", 98, 441);
+    place("url", 96, 539);
+    window.READY = true;
+  });
+</script>
+</body>
+</html>

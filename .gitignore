@@ -1,0 +1,33 @@
+# Git hrani samo besedilo, kodo in blagovno znamko. Mediji ostanejo na disku (✅ Vladimir, 20. 10. 2026).
+
+# vsi mediji
+*.mp4
+*.mov
+*.m4v
+*.webm
+*.wav
+*.mp3
+*.m4a
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+
+# vmesne mape montaže in generatorjev
+raw/
+higgsfield/
+assets/
+renders/
+snapshots/
+frames_*/
+node_modules/
+.DS_Store
+.idea/
+
+# izjema: blagovna znamka (logotipi, ikone, og-image, avatarji)
+!whatsnextaction/brand/**/*.png
+!whatsnextaction/brand/*.png
+!qubforge/og-image.png
+whatsnextaction/brand/**/*-pregled.jpg
+whatsnextaction/brand/**/*primerjava*.png
