@@ -4,6 +4,7 @@
 - [x] Personal #2 v2 ✅ (Vladimir, 20. 10.), 2.985 znakov; sre 21. 10. še en pregled
 - [x] LinkedIn Capture: podnapisi odstranjeni (Vladimir, 20. 10.; meni ⋯ → Edit captions → Remove captions)
 - [x] What's new ta teden ne (Vladimir): Google Calendar Sync in BYOS Google Drive naslednji teden kot **dve objavi**; 📝 Calendar Sync pon 26. 10., BYOS ✅ zamaknjen za teden → 📝 pon 2. 11.
+- [x] Git (Claude): repo samo besedilo, koda in blagovna znamka (~14 MB), mediji ostanejo na disku; `launch-sequence.md` in analiza 9. 9. v `arhiv/`; posodobljeni CLAUDE.md (Odprto, logotip), social-guidelines (ikone G4), feature-list (izidi, vrstni red videov), trije plani (stanje po zagonu, tabele objav)
 - [x] Ikone G4 (Claude): `whatsnextaction/brand/icons/` (avatar, YouTube banner, watermark, intro, logotip kartice); Clarify kartica že z G4
 - [ ] **Ta teden, Vladimir: zamenjava ikon** na YouTube (slika, banner, watermark), TikTok, Instagram, X; backend in frontend že urejena (Vladimir), Zoho ni potrebe; Vladimir preveri Gravatar, Stripe in Paywiser
 - [x] Scenarij WNA #3 Next Actions + Today 📝: `whatsnextaction/objave/2026-10-29-video-next-today.md` (~19 s, pravi UI 60 %, H7 hook "20 next steps. Where do you start?", 9:16 + 1:1); ⬜ potrditev do pon 26. 10.; UI posnetki sre 28. 10.
@@ -89,7 +90,7 @@
 - [x] Tor 13. 10.: Stripe preverjen (ni novih nakupov Pro); LinkedIn QubForge "It's out" samodejni podnapisi urejeni; Instagram Reel auto captions izklopljeni in Reel deljen v Story
 - [x] **Pet 9. 10.: zagon WNA.** Beta mail + registracija čet 8. 10. (darilo Pro/Team 1 leto, Pro nakup preverjen). Video "It's out": YouTube https://youtube.com/shorts/M44Vqth8NWs · TikTok https://www.tiktok.com/@whatsnextaction/video/7694578854131698966 · Instagram https://www.instagram.com/p/DeRFOxcKidy/ · QubForge #1 https://www.linkedin.com/posts/qubforge_whatsnextaction-productivity-startup-activity-7514242821130993666-FnAK · Vladimir delil z "First product out. If you keep everything in your head, this one is for you."
 - [x] Odločitve 9. 10.: ves koledar zamaknjen za dva tedna; LinkedIn ob torkih 8:30; oznaka AI samo Instagram; samodejni podnapisi nikjer; Reddit ne (revizija 7. 12.); personal #2 "Building my first product in the AI era"
-- [x] Marketinški plani (WNA, personal, QubForge), launch-sequence, koledar objav, analiza, social-guidelines
+- [x] Marketinški plani (WNA, personal, QubForge), launch-sequence, koledar objav, analiza, social-guidelines (launch-sequence in analiza od 20. 10. v `arhiv/`)
 - [x] QubForge logo sting (1:1 in 9:16), og-image in OG oznake na qubforge.com
 - [x] LinkedIn profil urejen; **personal #1 "Became an entrepreneur"** tor 15. 9. (12. 10.: 1.497 prikazov, 49 reakcij, 12 komentarjev)
 - [x] Računi: YouTube, Instagram, TikTok (Verified Business), X (samo rezervacija)

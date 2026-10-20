@@ -1,4 +1,4 @@
-# WhatsNextAction — kaj vse je v produktu (iz specifikacij, stanje 15. 9. 2026)
+# WhatsNextAction — kaj vse je v produktu (iz specifikacij, stanje 15. 9. 2026; pogl. 9 in 10 posodobljena 20. 10.)
 
 > Vir: `wna_orchestration/specs/features/wna-features.md` (33 poglavij), `email-to-inbox.md`, `p2-team-collaboration.md`, `contracts/limits.md`, `roadmap.md`.
 > Namen: seznam za videe in objave. Stolpec **Video** = ali funkcija nosi samostojen petkov video (★★★ = prva faza, ★★ = kasneje, ★ = omemba, – = ne).
@@ -82,16 +82,17 @@
 | Connections, delegiranje, deljeni projekti | – | – | da |
 
 ## 9. Kar prihaja (roadmap: Now / Next) — za "What's new" objave, ne za obljube v videih
-- V delu: **Google Calendar sync** (dvosmerno, Pro/Team), Google account connection, **Apple / Microsoft SSO**, **BYOS Google Drive** (priponke v lastnem Drivu, tudi za Free)
+- Izide okt 2026: **Google Calendar sync** (dvosmerno, Pro/Team; What's new 📝 pon 26. 10.), **BYOS Google Drive** (priponke v lastnem Drivu, tudi za Free; What's new 📝 pon 2. 11.), Google account connection
+- V delu: **Apple / Microsoft SSO** (⬜ stanje preveri v orkestratorju)
 - Načrtovano: priponke prek Email to Inbox, **globalno iskanje**, Cmd+K paleta, **onboarding ob prvi prijavi**, množične operacije, izboljšave Weekly Review (napredek, praznovanje), mobile-web poliranje (poteze, pull-to-refresh), **streaks**, prazna stanja z ilustracijami, Undo, Notes, USD za ne-EU
 - Kasneje: native iOS/Android (offline, push, widget, share extension), Horizons of Focus, Natural Planning Model, checklists, rich capture (foto/zvok), javni API, izvoz podatkov
 
 ## 10. Predlog vrstnega reda petkovih videov (faza 1, po ★★★)
-1. Capture: Inbox + Quick Add ("get it out of your head")
-2. Clarify: Is it actionable? + Two-minute rule
-3. Next Actions / Today ("know your next action")
-4. Waiting For
-5. Context tags (@errands)
+1. Capture: Inbox + Quick Add ("get it out of your head") ✅ objavljeno pet 16. 10.
+2. Clarify: Is it actionable? + Two-minute rule ✅ pet 23. 10.
+3. Next Actions / Today ("know your next action") ✅ čet 29. 10.
+4. Waiting For (pet 6. 11.)
+5. Context tags (@errands) (pet 13. 11.)
 6. Weekly Review
 7. Engage dashboard ("open, see, close")
 8. Email to Inbox (Pro)

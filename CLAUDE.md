@@ -15,7 +15,7 @@ Ta mapa je marketinški projekt Vladimirja Hozjana (CEO in ustanovitelj QubForge
 - Claude nikoli ne klikne "objavi", ne pošilja mailov in ne odpira računov. Prenos datotek s spleta samo z dovoljenjem (Higgsfield: dovoljenje dano).
 
 ## Strategija (odločeno)
-- Trije ločeni plani: `personal/marketing-plan.md`, `qubforge/marketing-plan.md`, `whatsnextaction/marketing-plan.md`. Skupno zaporedje: `launch-sequence.md`. Koledar: `koledar-objav.md` (do 31. 12. 2026). Analiza: `analiza-strategije-2026-09-09.md`. Checklista: `checklist.md`.
+- Trije ločeni plani: `personal/marketing-plan.md`, `qubforge/marketing-plan.md`, `whatsnextaction/marketing-plan.md`. Zagonsko zaporedje (zagon 8.–9. 10. opravljen) in analiza 9. 9.: `arhiv/`. Koledar: `koledar-objav.md` (do 31. 12. 2026). Checklista: `checklist.md`.
 - **WNA**: samo socialni marketing, brez plačanih oglasov. Platforme: YouTube Shorts, TikTok, Instagram Reels, LinkedIn. X ne. Reddit ne (✅ Vladimir, 9. 10.: r/gtd so GTD veterani, promocija se briše, zahteva preveč časa; ponovno pretehtati pri reviziji 7. 12.). Product Hunt samo ob native zagonu.
 - **Ciljna skupina WNA**: ljudje, ki GTD **ne poznajo**. Personi A "preobremenjena strokovnjakinja 32–45" in B "ambiciozni mladi profesionalec 22–30" enakovredno; C vodja ekipe (Team) kasneje. GTD veterani namenoma ne. V videih ne vodimo z "GTD", ampak z bolečino; žargon prevajamo v vsakdanji jezik.
 - **Pozicioniranje**: "a system you can trust", mir namesto produktivnosti. Tri jedrna sporočila: 1 vse iz glave, 2 vsaka stvar ima naslednji korak, 3 sistem, ne disciplina. Vsak video nosi natanko eno.
@@ -26,9 +26,9 @@ Ta mapa je marketinški projekt Vladimirja Hozjana (CEO in ustanovitelj QubForge
 - Vsebina videov: `whatsnextaction/feature-list.md` (funkcije, paketi, hooki, vrstni red). Napotki za račune: `whatsnextaction/social-guidelines.md`.
 
 ## Kontekst
-- Vladimir: 25+ let, DSP doktorat, Iskratel, Inova IT, NiceHash CTO 2018–2024 in CEO 2024–jul 2025. LinkedIn linkedin.com/in/vladimir-hozjan, ~914 sledilcev, večinoma iz NiceHash/kripto sfere. Prva objava #1 "Became an entrepreneur" objavljena tor 15. 9. 2026.
+- Vladimir: 25+ let, DSP doktorat, Iskratel, Inova IT, NiceHash CTO 2018–2024 in CEO 2024–jul 2025. LinkedIn linkedin.com/in/vladimir-hozjan, ~943 sledilcev (9. 10.), večinoma iz NiceHash/kripto sfere. Prva objava #1 "Became an entrepreneur" objavljena tor 15. 9. 2026.
 - QubForge: qubforge.com (React/Vite), logotip = izometrična kocka z repom Q, gradient #00D4FF → #8B5CF6, ozadje #0A0E1A, Inter. OG oznake in og-image urejeni.
-- WNA: whatsnextaction.com, mobile-first web app, GTD; Free / Pro 9 € / Team 14 €; logotip blisk na teal gradientu (#164e63 → #0e7490), Montserrat. Specifikacije in roadmap v `~/Documents/wna_orchestration` (`roadmap.md`, `specs/features/wna-features.md`, `contracts/limits.md`). Email to Inbox uporablja catch-all na whatsnextaction.com.
+- WNA: whatsnextaction.com, mobile-first web app, GTD; Free / Pro 9 € / Team 14 €; logotip G4 ("wn" + puščica, od 15. 10.; prej blisk) na teal gradientu (#164e63 → #0e7490), Montserrat; ikone v `whatsnextaction/brand/icons/`. Specifikacije in roadmap v `~/Documents/wna_orchestration` (`roadmap.md`, `specs/features/wna-features.md`, `contracts/limits.md`). Email to Inbox uporablja catch-all na whatsnextaction.com.
 - Zoho aliasi za račune: yt@, instagram@, tiktok@, x@ (neobjavljeni), hello@ javni.
 
 ## Struktura in konvencije datotek
@@ -56,7 +56,8 @@ Zahteve: `pip install playwright numpy && playwright install chromium`, `brew in
   - `wna-assets.html?kind=avatar|banner|square&w=&h=`: avatar 1024×1024, YouTube banner 2560×1440 (varno območje 1546×423 sredinsko), square 1080×1080. Izhodi so že narejeni v `whatsnextaction/brand/` (`wna-avatar-1024.png`, `wna-youtube-banner-2560x1440.png`, `wna-intro-1080.png`); nanje se sklicuje `whatsnextaction/social-guidelines.md`.
 - Pisave: samo Inter TTF v `fonts/inter/extras/ttf/` (Regular, Medium, SemiBold, Bold); HTML jih nalaga relativno, zato generatorjev ne premikaj iz `src/`.
 
-## Odprto (15. 9. 2026)
-- Je Pro nakup v produkciji živ? (odloči CTA v zagonskem videu)
-- Datum native aplikacij.
-- YouTube kanal odprt 16. 9. (youtube.com/@WhatsNextAction). Računa TikTok/IG še nista odprta; glas še ni posnet; posnetki zaslona še niso narejeni.
+## Odprto (20. 10. 2026)
+- Zagon opravljen (beta mail in registracija čet 8. 10., "It's out" pet 9. 10.); računi YouTube, Instagram, TikTok in X odprti 16.–18. 9.; glas Julian; tedenski videi od pet 16. 10.
+- Datum native aplikacij → Product Hunt.
+- YouTube telefonsko preverjanje (brez njega povezava v opisu ni klikljiva); TikTok 2FA; TLS certifikat za www.whatsnextaction.com.
+- Merjenje: UTM in "kje si slišal za nas" ob registraciji; kratek URL `/start`.

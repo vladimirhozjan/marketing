@@ -1,8 +1,8 @@
 # WhatsNextAction — marketinški plan
 
-> Zadnja sprememba: 2026-09-14 (v4)
+> Zadnja sprememba: 2026-10-20 (v5: stanje po zagonu)
 > Legenda: ✅ odločeno (Vladimir) · 📝 predlog Claude (v pregledu) · ⬜ še ni definirano
-> Zaporedje in ritem z drugima tokovoma: `../launch-sequence.md` · Kritični pregled: `../analiza-strategije-2026-09-09.md`
+> Ritem z drugima tokovoma: `../CLAUDE.md` (Strategija) · Arhiv (zagonsko zaporedje, kritični pregled 9. 9.): `../arhiv/`
 
 ## 1. Produkt in ponudba vrednosti ✅
 
@@ -35,7 +35,7 @@
 | Pro | 9 €/mes (81 €/leto) | neomejeno, ponavljajoče akcije, polne reference, 250 MB |
 | Team | 14 €/uporabnik/mes (126 €/leto) | kot Pro + delegiranje v ekipi, 1 GB/uporabnika |
 
-Free trenutno "Coming soon", Pro/Team "Contact Us".
+Stanje 7. 9.: Free "Coming soon", Pro/Team "Contact Us". Od zagona 8. 10. samopostrežna registracija (⬜ preveri, ali je nakup Pro/Team na strani že samopostrežen).
 
 **Beta:** ~15 beta uporabnikov; množično mail obveščanje je implementirano. ✅
 
@@ -116,12 +116,12 @@ Ni definirano. 📝 Predlog Claude: pravi KPI se postavijo po januarskem vrhu (k
 | **YouTube Shorts** | dolgoročno odkrivanje (iskanje + feed) | naslovi s ključnimi besedami; isti kanal kasneje daljše vsebine |
 | **TikTok** | doseg za nov račun brez sledilcev | 7–20 s, hook v prvi sekundi, tekst na zaslonu |
 | **Instagram Reels** | doseg + vizitka produkta | ista datoteka; profil s highlights |
-| **LinkedIn** | pretvorba v Pro/Team | objava z Vladimirjevega profila; QubForge stran deli; ni ločene WNA strani |
+| **LinkedIn** | pretvorba v Pro/Team | WNA videi gredo na stran QubForge (od Capture 16. 10.); ni ločene WNA strani; Vladimirjev osebni profil WNA ne prodaja |
 
 **Nabor po objavi ✅:** en video tedensko, nabor platform zožan glede na to, komu je objava namenjena — ne vse povsod. (📝 A → LinkedIn + Instagram; B → TikTok + Shorts + Instagram; oba → vse štiri.)
 
 ### Sekundarno (samo ob zagonih) 📝
-Product Hunt (ob native zagonu, gl. launch-sequence).
+Product Hunt (ob native zagonu).
 
 **Reddit ✅ ne (Vladimir, 9. 10.):** r/gtd so GTD veterani (ni ciljna skupina), r/productivity in FB skupine brišejo promocijo, nov račun zahteva tedne sodelovanja. Ponovno pretehtati pri reviziji 7. 12.
 
@@ -153,9 +153,9 @@ Product Hunt (ob native zagonu, gl. launch-sequence).
 
 **Pravila za videe 📝:** pravi UI aplikacije nosi vsaj polovico vsakega videa (AI prizori = hook in prehodi); enak vizualni stil vsak teden; oznaka AI ✅ (Vladimir, 9. 10.): samo Instagram (realističen AI glas Julian; Meta izrecno zahteva); TikTok in YouTube brez, dokler so prizori animirani in glas ne posnema resnične osebe; pri realističnih prizorih povsod. Samodejni podnapisi ✅ nikjer, ker ima vsak video ključne stavke kot napis na zaslonu; LinkedIn nima oznake; nikoli deljenje TikTok povezave z vodnim žigom na druge platforme.
 
-## 8. Go-to-market: beta → javni zagon ✅ (datum ⬜)
+## 8. Go-to-market: beta → javni zagon ✅ (opravljen 8.–9. 10. 2026)
 
-- **Dan zagona ✅:** zjutraj množični mail beta uporabnikom (~15): obvestilo o zagonu + **darilo Pro/Team za eno leto**; nato video "It's out" na vseh štirih platformah; QubForge objava predstavi produkt. Zaporedje z drugima tokovoma: `../launch-sequence.md`.
+- **Dan zagona ✅:** zjutraj množični mail beta uporabnikom (~15): obvestilo o zagonu + **darilo Pro/Team za eno leto**; nato video "It's out" na vseh štirih platformah; QubForge objava predstavi produkt. Zaporedje z drugima tokovoma: `../arhiv/launch-sequence.md`.
 - **Datum ✅ (21. 9.):** dva koraka. Tor 22. 9. registracija + beta mail; pon 28. 9. video "It's out" + QubForge objava; pet 2. 10. prvi tedenski video. Zamik ✅ (Vladimir, 8. 10.): broadcast čet 8. 10.; It's out pet 9. 10.; prvi tedenski video pet 16. 10. (`../koledar-objav.md`).
 - **Pred zagonom (kar mora obstajati):** računi TikTok/Instagram/YouTube; video "It's out"; beta mail. 📝 Priporočeno: www SSL popravek, samopostrežna registracija namesto "Coming soon"/"Contact Us", prvi zaslon strani za novince, posnetki zaslona aplikacije za video.
 - **Drugi zagon 📝:** native aplikacije (~nov–dec) = "Now in the App Store"; Product Hunt takrat (oz. začetek januarja).
@@ -168,13 +168,13 @@ Product Hunt (ob native zagonu, gl. launch-sequence).
 
 **Čas 📝:** Vladimir 4–6 h/teden (potrjevanje, objavljanje, komentarji, LinkedIn) + enkratno pred zagonom 15–25 h.
 
-**Tedenski produkcijski cikel 📝:** pon scenarij + tekst objave → tor Vladimir potrdi → sre Higgsfield → čet glas + montaža (Claude, ffmpeg) → pet objava. Klik "objavi" vedno Vladimir ali z njegovo potrditvijo za vsako objavo.
+**Tedenski produkcijski cikel ✅:** pon scenarij + tekst objave → tor Vladimir potrdi → sre Higgsfield → čet glas + montaža (Claude, HyperFrames ✅ 12. 10.; ffmpeg rezerva) → pet objava. Klik "objavi" vedno Vladimir ali z njegovo potrditvijo za vsako objavo.
 
 ## 10. Časovnica in koledar ✅ (datumi ⬜)
 
-- Ritem: petek video; pon/tor "What's new" ob izidu; personal in QubForge mesečno ob torkih ob 8:30 s 14-dnevnim zamikom (gl. launch-sequence).
+- Ritem: petek video; pon/tor "What's new" ob izidu; personal in QubForge mesečno ob torkih ob 8:30 s 14-dnevnim zamikom.
 - Faze 1–7 po pogl. 7.
-- Datum zagona ⬜; datum native zagona ⬜ (uskladiti z orkestratorjem).
+- Zagon ✅ 8.–9. 10. 2026; datum native zagona ⬜ (uskladiti z orkestratorjem).
 - **Revizijske točke 📝:** po 8 tednih (kateri persona/platforma se odziva → zožanje); konec februarja 2027 (po januarskem vrhu; postavitev KPI); maj 2027 (poletni ritem, Team push).
 
 ## 11. Merjenje in pregled 📝

@@ -1,10 +1,10 @@
 # Personal (dr. Vladimir Hozjan) — marketinški plan
 
-> Zadnja sprememba: 2026-09-14 · Legenda: ✅ odločeno (Vladimir) · 📝 predlog Claude · ⬜ odprto
-> Zaporedje in ritem z drugima tokovoma: `../launch-sequence.md`
+> Zadnja sprememba: 2026-10-20 · Legenda: ✅ odločeno (Vladimir) · 📝 predlog Claude · ⬜ odprto
+> Ritem z drugima tokovoma: `../CLAUDE.md` (Strategija); zagonsko zaporedje v `../arhiv/launch-sequence.md`
 
 ## Vloga toka ✅
-- Edini tok z obstoječim občinstvom: **LinkedIn osebni profil, ~600 sledilcev, pretežno kripto/finance sfera**. Drugih osebnih kanalov ni.
+- Edini tok z obstoječim občinstvom: **LinkedIn osebni profil, ~943 sledilcev (9. 10.), pretežno kripto/finance sfera**. Drugih osebnih kanalov ni.
 - Prva objava: **ustanovitev QubForge — "postal sem podjetnik, kar sem si dolgo želel"** — in s tem napoved QubForge. Ne prodaja produkta.
 - Naprej: **"kaj sem se naučil na tej poti"** — iskrene lekcije ustanovitelja.
 - Prepleten s tokom QubForge (personal odpre zgodbo, QubForge predstavi produkt).
@@ -28,8 +28,17 @@ LinkedIn osebni profil. Vse v angleščini. (X za personal: morda kasneje za bui
 
 ## 5. Ritem in koledar ✅
 - **Mesečno, torek ob 8:30** ✅ (Vladimir, 9. 10.); prej ponedeljek. QubForge objavlja 14 dni za personal objavo.
-- Prva objava: ustanovitev QubForge (teden pred zagonom WNA — 📝 gl. launch-sequence). Datum ⬜.
+- Prva objava ✅ objavljena tor 15. 9.: ustanovitev QubForge ("Became an entrepreneur").
 - Deljenje QubForge/WNA objav z enim stavkom ne šteje kot mesečna objava.
+
+## Objave (stanje 20. 10.; podrobnosti v `../koledar-objav.md`)
+| # | Datum | Tema | Stanje |
+|---|---|---|---|
+| 1 | tor 15. 9. | Became an entrepreneur | ✅ objavljeno |
+| – | pet 9. 10. | deli QubForge #1 z enim stavkom | ✅ deljeno |
+| 2 | tor 27. 10. | Building software in the age of agents (kako je nastal WNA, prehod na razvoj z agenti) | ✅ osnutek v2 |
+| 3 | tor 24. 11. | A day with my team of agents (nadaljevanje #2) | ✅ tema |
+| 4 | tor 22. 12. | Year one, honestly | 📝 |
 
 ## Pravila 📝
 - Nikoli neposredna prodaja WNA; deli in komentira.

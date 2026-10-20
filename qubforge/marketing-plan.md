@@ -1,7 +1,7 @@
 # QubForge — marketinški plan
 
-> Zadnja sprememba: 2026-09-14 · Legenda: ✅ odločeno (Vladimir) · 📝 predlog Claude · ⬜ odprto
-> Zaporedje in ritem z drugima tokovoma: `../launch-sequence.md`
+> Zadnja sprememba: 2026-10-20 · Legenda: ✅ odločeno (Vladimir) · 📝 predlog Claude · ⬜ odprto
+> Ritem z drugima tokovoma: `../CLAUDE.md` (Strategija); zagonsko zaporedje v `../arhiv/launch-sequence.md`
 
 ## Vloga toka ✅
 - **Dolgoročna gradnja znamke podjetja** (holding s portfeljem SaaS produktov).
@@ -10,7 +10,7 @@
 - Obstoječi kanal: **LinkedIn stran QubForge**. Vse v angleščini.
 
 ## 1. Znamka in pozicioniranje 📝
-Tehnološki holding iz Maribora, ki gradi portfelj majhnih, ostrih SaaS produktov; AI-native način gradnje; EU compliance (fiskalizacija, OSS) kot prednost, ne ovira. Vizualno: obstoječi hexagonalni logotip, temna tema, EN/SL spletna stran.
+Tehnološki holding iz Maribora, ki gradi portfelj majhnih, ostrih SaaS produktov; AI-native način gradnje; EU compliance (fiskalizacija, OSS) kot prednost, ne ovira. Vizualno: logotip izometrična kocka z repom Q (gradient #00D4FF → #8B5CF6, ozadje #0A0E1A, Inter), temna tema, spletna stran qubforge.com.
 
 ## 2. Občinstvo 📝
 Tisti, ki preverjajo, ali podjetje obstaja in je resno: partnerji, stranke, kandidati, nekoč investitorji. Sledilci iz Vladimirove osebne objave.
@@ -28,8 +28,17 @@ LinkedIn stran QubForge (Vladimir deli objave s svojega profila). Spletna stran 
 
 ## 5. Ritem in koledar ✅
 - **Mesečno, torek ob 8:30** ✅ (Vladimir, 9. 10.)**, 14 dni za personal objavo.** Prej ponedeljek.
-- Zagonska objava (predstavitev WNA) na dan zagona WNA = septembrska objava. Datum ⬜.
+- Zagonska objava ✅ objavljena pet 9. 10. ("QubForge launches WhatsNextAction", z videom "It's out" 1:1); Vladimir jo je delil.
 - Deli vsak WNA "What's new" (deljenje ≠ mesečna objava).
+
+## Objave (stanje 20. 10.; podrobnosti v `../koledar-objav.md`)
+| # | Datum | Tema | Stanje |
+|---|---|---|---|
+| 1 | pet 9. 10. | QubForge launches WhatsNextAction | ✅ objavljeno |
+| – | od 16. 10. | WNA tedenski videi na strani (Capture 16. 10.) in What's new | ✅ teče |
+| 2 | tor 10. 11. | First month (mejniki WNA, kako delamo) | 📝 |
+| 3 | tor 8. 12. | How we build (ali napoved native aplikacij) | 📝 |
+| 4 | tor 5. 1. 2027 | 2026 in one post | 📝 |
 
 ## Razlika do personal toka 📝
 | | Personal ("I") | QubForge ("we") |
