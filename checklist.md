@@ -1,4 +1,33 @@
-# Checklista (stanje: torek 20. 10. 2026)
+# Checklista (stanje: ponedeljek 26. 10. 2026)
+
+## Danes, pon 26. 10.
+- [x] Scenarij #3 Next Actions + Today ✅ (Vladimir): H7-3d-1; TikTok dobi domač začetek (roka s telefonom, POV napis, brez 3D in logotipa), YT/IG/LinkedIn s H7; dodatni posnetek `next-00-hand.MOV` v sre
+- [ ] → tor 27. 10. (jaz): Higgsfield video H7 (2 različici, ~18 kreditov, izbereš ti), Julian 6 stavkov + Whisper, izrez glasbe, predloga 9:16 + TikTok + 1:1 brez UI (prestavljeno s pon, Vladimir: konec za danes)
+- [x] What's new ✅ (Vladimir): mesečni broadcast uporabnikom, samo večje stvari → osnutek oktober 📝 `whatsnextaction/objave/2026-11-02-mail-whats-new-oktober.md` (pošlje Vladimir pon 2. 11.); javno ✅ samo petkovi videi, funkcija za funkcijo (Calendar Sync in Drive kot video, osnutek LinkedIn/IG objave pobrisan)
+- [x] WNA plan: novoletni val ✅ smer (pogl. 6) in SEO + mreža 📝 (pogl. 6, revizija 7. 12.)
+- [x] Personal #2 vizual ✅ (Vladimir, 26. 10.): namesto timelapsa 6 s zanka v realnem času, 1:1, kamera spodaj desno, brez zvoka → `personal/video/personal-02-agents-1x1.mp4` (+ `.jpg`); izsek zaslona 1:06,5–1:13 (brez cenovne strategije in internih naslovov)
+- [x] Personal #2 v5 → v6 📝 (brainstorming, 2979 znakov, zaključek s citatom Dark Tower in "How about you?") v `personal/objave/2026-10-27-objava-linkedin.md`; ✅ potrjen (Vladimir, 26. 10.)
+- [x] Analitika Clarify dan 3 → `whatsnextaction/marketing-plan.md` pogl. 11: TikTok 272 (1,45 s, +1 sledilec) · YouTube 71 (0:08) · Instagram 160 (edini komentar žaljiv, Vladimir ga je skril) · LinkedIn QF 31 prikazov, 1 reakcija, podnapisov ni · admin: 24 uporabnikov, **0 novih od 19. 10.**, DAU 0
+
+## Danes, pet 23. 10.
+- [x] Ure objav ✅ (Vladimir): LinkedIn QF 9:00–10:00, YT, TikTok, IG 17:00–18:00; vpisano v scenarij in koledar (ritem za vse petke)
+- [x] Objava #2 Clarify na vseh štirih (povezave spodaj pod "Ti")
+- [x] Zamenjava ikon G4 povsod (TikTok, YouTube, Instagram, X, Stripe, Paywiser, Gravatar); Paywiser sprejme največ 1000 × 1000 → `wna-logo-wide-G4-1000x205.png`
+- [ ] → pon 26. 10. ✅ (Vladimir, 23. 10.): posnetka za personal #2 in branje v4 (glej "Ti")
+- [ ] Komentarje pod Clarify spremlja Vladimir (pazi ✅, 23. 10.); osnutke odgovorov pripravim, če jih pošlješ
+
+## Danes, čet 22. 10.
+- [x] Personal #2: v3 → v4 📝 (2810 znakov; dizajner ven, vprašanje ✅ "How do you keep your agents honest?", gladkejši prehodi); Vladimir jutri še enkrat prebere
+- [x] UI posnetki Clarify (Vladimir, 14:18–14:23)
+- [x] Montaža Clarify (Claude): `whatsnextaction/video/wna-clarify-9x16.mp4` (YT, IG), `wna-clarify-tiktok-9x16.mp4` (TikTok), 21 s, −14 LUFS; naslovnica `wna-clarify-cover-9x16.jpg`; UI rez `wna-clarify/cut_ui.py`
+- [x] Sinhronizacija UI popravljena (No na "No?", "Under 2 minutes?" na besedo) in LinkedIn 1:1 ✅ (Vladimir): `wna-clarify-1x1.mp4`, sličica `wna-clarify-thumbnail-1x1.jpg`, besedilo 📝 v scenariju
+- [x] Mirnejša verzija (Vladimir: "preveč skače"): brez tipk Y/N, približkov in bliskov, števec brez utripanja, UI 1,5–2×, rezi samo na mirujočih zaslonih, mehki prehodi; vse tri datoteke na novo
+- [x] Pregled videov Clarify ✅ (Vladimir, 22. 10.: "sedaj bo vredu… lahko berem zaslone") → pet 23. 10. objava: LinkedIn QubForge 9:00–10:00, YT, TikTok in IG 17:00–18:00 (✅ Vladimir, 23. 10.; ure vpisane v scenarij in koledar)
+
+## Danes, sre 21. 10.
+- [x] Google brand (Vladimir, 21. 10.): ikona G4 urejena
+- [x] ~~Personal #2 v2: še en pregled~~ → v3, v4 (22. 10.)
+- [x] **Pet 23. 10., Vladimir: zamenjava vseh ikon** ✅ (YouTube slika, banner in watermark, TikTok, Instagram, X, Gravatar, Stripe, Paywiser); datoteke in navodila v `whatsnextaction/brand/icons/README.md`; zamenjano 23. 10.: TikTok ✅ (še kaže staro, verjetno pregled), YouTube ✅, Instagram ✅, X ✅, Paywiser ✅ (`wna-logo-wide-G4-1000x205.png`), Stripe ✅, Gravatar ✅ (hello@, logotip G4, ime WhatsNextAction)
 
 ## Danes, tor 20. 10.
 - [x] Personal #2 v2 ✅ (Vladimir, 20. 10.), 2.985 znakov; sre 21. 10. še en pregled
@@ -6,7 +35,7 @@
 - [x] What's new ta teden ne (Vladimir): Google Calendar Sync in BYOS Google Drive naslednji teden kot **dve objavi**; 📝 Calendar Sync pon 26. 10., BYOS ✅ zamaknjen za teden → 📝 pon 2. 11.
 - [x] Git (Claude): repo samo besedilo, koda in blagovna znamka (~14 MB), mediji ostanejo na disku; `launch-sequence.md` in analiza 9. 9. v `arhiv/`; posodobljeni CLAUDE.md (Odprto, logotip), social-guidelines (ikone G4), feature-list (izidi, vrstni red videov), trije plani (stanje po zagonu, tabele objav)
 - [x] Ikone G4 (Claude): `whatsnextaction/brand/icons/` (avatar, YouTube banner, watermark, intro, logotip kartice); Clarify kartica že z G4
-- [ ] **Ta teden, Vladimir: zamenjava ikon** na YouTube (slika, banner, watermark), TikTok, Instagram, X; backend in frontend že urejena (Vladimir), Zoho ni potrebe; Vladimir preveri Gravatar, Stripe in Paywiser
+- [x] Zamenjava ikon → pet 23. 10. (glej sre 21. 10.); backend, frontend in Google že urejeni (Vladimir), Zoho ni potrebe
 - [x] Scenarij WNA #3 Next Actions + Today 📝: `whatsnextaction/objave/2026-10-29-video-next-today.md` (~19 s, pravi UI 60 %, H7 hook "20 next steps. Where do you start?", 9:16 + 1:1); ⬜ potrditev do pon 26. 10.; UI posnetki sre 28. 10.
 
 ## Danes, pon 19. 10.
@@ -58,12 +87,12 @@
 - [x] **Pet 16. 10. popoldne (namesto 9:00): objava #1 Capture** (YT, TikTok, IG, LinkedIn QF); oznaka AI samo IG, samodejni podnapisi nikjer
 - [ ] Odgovori na komentarje in maile beta uporabnikov; kdor omeni ekipo → Team v adminu
 - [x] ~~Tor 20. 10.~~ pon 19. 10.: potrditev scenarija Clarify ✅
-- [ ] **Čet 22. 10.: UI posnetki Clarify** (`clarify-01/02/03`, navodila v scenariju); montažo naredim isti dan
-- [ ] Pet 23. 10.: objava #2 Clarify (YT, TikTok, IG)
-- [ ] Do pet 23. 10. (ne tor 20. 10., Vladimir): posnetka za personal #2 (zaslon 4 terminali 2 × 2 + kamera, 2–3 min) v `personal/video/raw/`
+- [x] **Čet 22. 10.: UI posnetki Clarify** (`clarify-01/02/03`, navodila v scenariju); montažo naredim isti dan
+- [x] Pet 23. 10.: objava #2 Clarify (LinkedIn QF 9:00–10:00; YT, TikTok, IG 17:00–18:00): YouTube ✅ https://www.youtube.com/shorts/xbkoAq_fR3A · TikTok ✅ https://www.tiktok.com/@whatsnextaction/video/7699893532668071190 · IG ✅ https://www.instagram.com/p/De18pYjq15V/ · LinkedIn QF ✅ https://www.linkedin.com/posts/qubforge_40-things-now-what-activity-7519430684730519552-b0QN
+- [x] **Pon 26. 10.** ✅ (Vladimir, 23. 10.; prej pet 23. 10.): posnetka za personal #2 (zaslon 4 terminali 2 × 2 + kamera, 2–3 min) v `personal/video/raw/`
 - [x] Intervju za personal #2 opravljen pon 19. 10. (namesto 26. 10.)
 - [x] Osnutek v1 personal #2 potrjen pon 19. 10. (Vladimir)
-- [ ] Vladimir: podrobni popravki besedila v1 (bere se skokovito), nato gladilni prehod
+- [x] Vladimir: podrobni popravki besedila v1 (bere se skokovito), nato gladilni prehod → v4 (22. 10.); zadnje branje **pon 26. 10.** ✅ (Vladimir, 23. 10.)
 - [ ] **Tor 27. 10. 8:30: objava personal #2**
 
 ### Jaz
@@ -72,8 +101,8 @@
 - [x] Pon 19. 10.: številke Capture dan 3
 - [x] Pon 19. 10.: Higgsfield H6 ✅ H6-video-2 (Vladimir); kartica ✅ "Next week: what to do right now."
 - [x] Pon 19. 10.: Julian (8 stavkov, Whisper ✅), glasba, predloga Clarify obe različici (`video/wna-clarify/`, `wna-clarify-tiktok/`) z Y/N tipkama, H6 in kartico; v četrtek manjkajo samo UI posnetki
-- [ ] Čet 22. 10.: montaža Clarify YT/IG + TikTok različica, naslovnica → tebi isti dan
-- [ ] Do pon 26. 10.: montaža vizuala personal #2 (1:1 timelapse, kamera spodaj desno, brez zvoka)
+- [x] Čet 22. 10.: montaža Clarify YT/IG + TikTok različica, naslovnica → tebi isti dan
+- [x] Pon 26. 10. isti dan kot posnetka (objava tor 8:30): montaža vizuala personal #2 (6 s zanka, 1:1, kamera spodaj desno, brez zvoka)
 - [x] Pon 19. 10.: zgodba personal #2 zapisana (Vladimir) + osnutek v0 📝 + 9 dopolnilnih vprašanj
 - [x] Pon 19. 10.: osnutek v1 personal #2 iz intervjuja, 2.762 znakov (`personal/objave/2026-10-27-objava-linkedin.md`)
 

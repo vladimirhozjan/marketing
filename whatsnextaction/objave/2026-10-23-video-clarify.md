@@ -1,11 +1,13 @@
 # WNA · Video #2 Clarify (Is it actionable? + pravilo dveh minut)
 
-- Kanal: YouTube Shorts, TikTok, Instagram Reels (9:16). Persona B (koledar ✅), zato brez LinkedIna in brez različice 1:1.
-- Datum: pet 23. 10. 2026, ~9:00. Cikel ✅ (Vladimir, 19. 10.: malo časa): pon 19. 10. scenarij in potrditev, H6 → do sre 21. 10. Julian, glasba in predloga z vsem razen UI (jaz) → **čet 22. 10. UI posnetki (ti) in montaža isti dan (jaz)** → pet 23. 10. objava (ti).
+- Kanal: YouTube Shorts, TikTok, Instagram Reels (9:16). Persona B (koledar ✅). LinkedIn QubForge z različico 1:1 ✅ (Vladimir, čet 22. 10.: "daj še linkedin").
+- Datum: pet 23. 10. 2026, LinkedIn QubForge 9:00–10:00, YouTube Shorts, TikTok in Instagram 17:00–18:00 (✅ Vladimir, 23. 10.). Cikel ✅ (Vladimir, 19. 10.: malo časa): pon 19. 10. scenarij in potrditev, H6 → do sre 21. 10. Julian, glasba in predloga z vsem razen UI (jaz) → **čet 22. 10. UI posnetki (ti) in montaža isti dan (jaz)** → pet 23. 10. objava (ti).
 - Vizual: 📝 en nov 3D prizor za hook, nato pravi UI čez skoraj dve tretjini videa (Clarify korak za korakom, velika tipka Y / N na zaslonu, Do It Now, Inbox Zero), zaključna kartica.
 - Sporočilo: 2 "vsaka stvar ima naslednji korak" → tagline *Know your next action.*
 - Dolžina: 📝 okoli 20 s (naracija ~15,6 s)
 - Status: ✅ scenarij potrjen (Vladimir, pon 19. 10.), vključno s H6, glasbo in napovedjo na kartici.
+
+**Objavljeno pet 23. 10.:** [YouTube](https://www.youtube.com/shorts/xbkoAq_fR3A) · [TikTok](https://www.tiktok.com/@whatsnextaction/video/7699893532668071190) · [Instagram](https://www.instagram.com/p/De18pYjq15V/) · [LinkedIn QubForge](https://www.linkedin.com/posts/qubforge_40-things-now-what-activity-7519430684730519552-b0QN)
 
 Pravila: brez "GTD" v govoru; brez "AI-powered"; brez pomišljajev; vsak stavek naracije ima napis na zaslonu; oznaka AI ✅ samo Instagram; samodejni podnapisi nikjer; TikTok *Your brand* ✅; YouTube "ni za otroke" ✅; brez primerjave z drugimi aplikacijami.
 
@@ -22,8 +24,8 @@ Capture se je končal s 40 vnosi v Inboxu in napovedjo *"Next Friday: one questi
 - [x] 4. ✅ Napoved na zaključni kartici: *Next week: what to do right now.*
 
 **~~Sre 21.~~ čet 22. 10.: UI posnetki** v `whatsnextaction/video/raw/` (navodila spodaj v "Snemanje UI")
-- [ ] 5. Demo račun: Inbox s 40 vnosi iz Capture (ostane, kot je) + 4 novi vnosi na vrhu.
-- [ ] 6. `clarify-01-no.MP4`, `clarify-02-twominutes.MP4`, `clarify-03-inboxzero.MP4`.
+- [x] 5. Demo račun: Inbox s 40 vnosi iz Capture (ostane, kot je) + 4 novi vnosi na vrhu.
+- [x] 6. `clarify-01-no.MP4`, `clarify-02-twominutes.MP4`, `clarify-03-inboxzero.MP4` (Vladimir, čet 22. 10., 14:18–14:23). Imena se ne ujemajo z vsebino: `03` = trije No + Reply to Ana, `02` = čist posnetek Reply to Ana (uporabljen), `01` = Book flight for March → Inbox Zero. Rezanje: `video/wna-clarify/cut_ui.py`.
 
 **Pet 23. 10. (objavljaš ti)**
 - [ ] 7. Opisi po platformah (spodaj).
@@ -151,9 +153,11 @@ Prepoznaven zvok serije. Pri Capture je video začel pri 16,05 s pesmi in sprost
 
 ## Objave po platformah (pet 23. 10., objavljaš ti) 📝
 
-Vrstni red: 1 YouTube Shorts → 2 TikTok → 3 Instagram Reels. LinkedIn ne (persona B); 📝 QubForge ga lahko deli kasneje, če želiš.
+Vrstni red: 1 YouTube Shorts → 2 TikTok → 3 Instagram Reels → 4 LinkedIn QubForge (✅ Vladimir, 22. 10.).
 
-Datoteke (pripravim do čet 22. 10.): `whatsnextaction/video/wna-clarify-9x16.mp4` (YT, IG), `wna-clarify-tiktok-9x16.mp4` (TikTok), naslovnica `wna-clarify-cover-9x16.jpg`.
+Ure ✅ (Vladimir, 23. 10.): **LinkedIn QubForge dopoldan 9:00–10:00** (LinkedIn berejo med delom, petek popoldan skoraj nihče), **YouTube Shorts, TikTok in Instagram popoldan 17:00–18:00** (persona B po službi; ob 17:00 je na vzhodni obali ZDA 11:00). LinkedIn gre zato prvi, ostale tri v zgornjem vrstnem redu ob 17:00. Capture je šel ves popoldan, zato bo primerjava LinkedIna zjutraj in popoldan.
+
+Datoteke ✅ (čet 22. 10.): `whatsnextaction/video/wna-clarify-9x16.mp4` (YT, IG), `wna-clarify-tiktok-9x16.mp4` (TikTok), `wna-clarify-1x1.mp4` (LinkedIn), naslovnica `wna-clarify-cover-9x16.jpg`, sličica `wna-clarify-thumbnail-1x1.jpg`.
 
 ### 1 · YouTube Shorts
 - Naslov:
@@ -194,3 +198,18 @@ Start free, link in bio.
 #twominuterule #productivity #todolist #inboxzero #whatsnextaction
 ```
 - Nastavitve: **AI label** vklopi · samodejni podnapisi izklopi · Cover: kader "40 things. Now what?" · *Also share to Facebook* izklopi · glasbe ne dodajaj · po objavi deli v Story (iz aplikacije na telefonu).
+
+### 4 · LinkedIn, stran QubForge (video 1:1) 📝
+- Besedilo:
+```
+Last week: get all forty things out of your head. This week: sort them.
+
+WhatsNextAction asks one question per item: is it actionable? If not, it goes to Someday, Reference or Trash. If it takes under two minutes, you do it right away instead of tracking it. Everything else leaves the Inbox with one clear next step.
+
+Forty items, a few minutes, and the Inbox is empty.
+
+Start free: https://whatsnextaction.com
+
+#WhatsNextAction #productivity #twominuterule
+```
+- Sličica: `wna-clarify-thumbnail-1x1.jpg` (kader "40 things. Now what?") · samodejni podnapisi izklopi (⋯ → Edit captions → Remove captions, če se spet vklopijo) · LinkedIn nima oznake AI.

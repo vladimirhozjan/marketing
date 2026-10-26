@@ -1,7 +1,7 @@
 # Koledar objav — 15. 9. → 31. 12. 2026
 
-> Vsi trije tokovi na eni časovnici. Vse v angleščini. Zadnja sprememba: 2026-10-09 (zagon izveden pet 9. 10.)
-> Ritem: personal in QubForge mesečno ob **torkih ob 8:30** (14 dni zamika; ✅ Vladimir, 9. 10., prej ponedeljek) · WNA video vsak petek · "What's new" pon/tor samo ob izidu (LinkedIn QubForge stran, Instagram, mail uporabnikom)
+> Vsi trije tokovi na eni časovnici. Vse v angleščini. Zadnja sprememba: 2026-10-23 (ure petkovih videov)
+> Ritem: personal in QubForge mesečno ob **torkih ob 8:30** (14 dni zamika; ✅ Vladimir, 9. 10., prej ponedeljek) · WNA video vsak petek: **LinkedIn QubForge 9:00–10:00, YouTube Shorts, TikTok in Instagram 17:00–18:00** (✅ Vladimir, 23. 10.; od #2 Clarify) · "What's new" pon/tor samo ob izidu (LinkedIn QubForge stran, Instagram, mail uporabnikom)
 > Nabor platform po personi: A → LinkedIn + Instagram · B → TikTok + YouTube Shorts + Instagram · oba → vse štiri
 > Tedenski cikel za vsak WNA video: pon scenarij (Claude) → tor potrditev (Vladimir) → sre video (Higgsfield + pravi UI) → čet glas + montaža → pet objava. Klik "objavi": Vladimir.
 > Vsebina videov: `whatsnextaction/feature-list.md` (hooki), `whatsnextaction/marketing-plan.md` pogl. 7 (stebri, faze).
@@ -28,16 +28,16 @@ Zagon se je premaknil s pon 28. 9. na **pet 9. 10.** (✅ Vladimir, 8. 10.: najp
 | **pet 9. 10. ~11:00** | personal | deli QubForge objavo z enim stavkom ✅ deljeno | LinkedIn | "First product out. If you keep everything in your head, this one is for you."; deljenje ≠ mesečna objava |
 | **pet 16. 10.** | whatsnextaction | **#1 Capture** — Inbox + Quick Add. "40 things in your head? Type them. Don't sort." Sporočilo 1, *Get it out of your head.* | vse štiri (oba) | prvi redni video; scenarij ✅ potrjen pon 12. 10. (`whatsnextaction/objave/2026-10-16-video-capture.md`); glasba ✅ `One Last Click.wav` |
 | ~~pon/tor 19.–20. 10.~~ | whatsnextaction | What's new: ni ta teden (Vladimir, 20. 10.: izid Google Calendar Sync in BYOS Google Drive raje naslednji teden, ta teden migracija serverjev) | | |
-| **pet 23. 10.** | whatsnextaction | **#2 Clarify** — Is it actionable? + two-minute rule. "Under two minutes? Don't file it. Do it." Sporočilo 2, *Know your next action.* | TikTok, Shorts, IG (B) | tipki Y/N na zaslonu |
-| **pon 26. 10.** 📝 | whatsnextaction | **What's new #1: Google Calendar Sync** ✅ tema (Vladimir, 20. 10.: dve ločeni objavi) | LinkedIn QF, IG, mail | 📝 dan; Pro/Team |
-| **tor 27. 10. 8:30** | personal | **#2 Building software in the age of agents** (delovni naslov; ✅ smer Vladimir, 19. 10.: "Razvoj v dobi agentov" oz. kako je nastal WNA; prvotno 9. 10. "Building my first product in the AI era") — prehod iz klasičnega v razvoj z agenti, napake, preveliko zaupanje v LLM, orkestrator; nastane iz Vladimirjeve zgodbe in intervjuja | LinkedIn | steber "kako gradim"; vizual: Twitch-slog video 4 terminali + kamera (posnetka do pet 23. 10.); intervju opravljen pon 19. 10., osnutek v1 ✅ (Vladimir, 19. 10.), čaka podrobne popravke; `personal/objave/2026-10-27-objava-linkedin.md` |
+| **pet 23. 10.** | whatsnextaction | **#2 Clarify** ✅ objavljeno (YT ✅ https://www.youtube.com/shorts/xbkoAq_fR3A · TikTok ✅ https://www.tiktok.com/@whatsnextaction/video/7699893532668071190 · IG ✅ https://www.instagram.com/p/De18pYjq15V/ · LinkedIn QF ✅ https://www.linkedin.com/posts/qubforge_40-things-now-what-activity-7519430684730519552-b0QN) — Is it actionable? + two-minute rule. "Under two minutes? Don't file it. Do it." Sporočilo 2, *Know your next action.* | vse štiri ✅ (Vladimir, 22. 10.: dodan LinkedIn QF, video 1:1) | LinkedIn QF 9:00–10:00, YT, TikTok, IG 17:00–18:00; mirna verzija UI brez tipk Y/N (22. 10.); `whatsnextaction/objave/2026-10-23-video-clarify.md` |
+| ~~pon 26. 10.~~ | whatsnextaction | ~~What's new #1: Google Calendar Sync~~ → vključeno v mesečni What's new (✅ Vladimir, 26. 10.: What's new = broadcast obstoječim uporabnikom 1× na mesec, samo večje stvari) | | ✅ (Vladimir, 26. 10.) brez posebne objave: aplikacijo razkrivamo teden za tednom, funkcijo za funkcijo v petkovih videih; Calendar Sync in Google Drive prideta na vrsto kot video |
+| **tor 27. 10. 8:30** | personal | **#2 Building software in the age of agents** (delovni naslov; ✅ smer Vladimir, 19. 10.: "Razvoj v dobi agentov" oz. kako je nastal WNA; prvotno 9. 10. "Building my first product in the AI era") — prehod iz klasičnega v razvoj z agenti, napake, preveliko zaupanje v LLM, orkestrator; nastane iz Vladimirjeve zgodbe in intervjuja | LinkedIn | steber "kako gradim"; vizual: Twitch-slog video 4 terminali + kamera (posnetka pon 26. 10., montaža isti dan; ✅ Vladimir, 23. 10.); intervju opravljen pon 19. 10., osnutek v1 ✅ (Vladimir, 19. 10.), čaka podrobne popravke; `personal/objave/2026-10-27-objava-linkedin.md` |
 | **čet 29. 10.** ✅ (Vladimir, 19. 10.: namesto pet 30. 10.) | whatsnextaction | **#3 Next Actions + Today** — "Not everything. Just today." Sporočilo 2, *Know your next action.* | vse štiri (oba) | ime produkta; scenarij 📝 `whatsnextaction/objave/2026-10-29-video-next-today.md` (20. 10.), UI posnetki in montaža sre 28. 10. |
 
 ## November — faza 2: trenutki olajšanja (*A system you can trust.*)
 
 | Datum | Tok | Objava | Kanal | Opombe |
 |---|---|---|---|---|
-| **pon 2. 11.** 📝 | whatsnextaction | **What's new #2: BYOS Google Drive** ✅ tema (Vladimir, 20. 10.: zamik za en teden, prej sre 28. 10.) | LinkedIn QF, IG, mail | 📝 dan: redni termin pon/tor; tudi za Free |
+| **pon 2. 11.** 📝 | whatsnextaction | **What's new: oktober** (mesečni broadcast ✅ Vladimir, 26. 10.; vsebuje Calendar Sync, Google Drive in ostale večje izide oktobra) | e-pošta obstoječim uporabnikom | `whatsnextaction/objave/2026-11-02-mail-whats-new-oktober.md`; ⬜ potrditev |
 | **pet 6. 11.** | whatsnextaction | **#4 Waiting For** — "Waiting on someone? Park it. Forget it. The app remembers." Sporočilo 3, *…a system you can trust.* | LinkedIn, IG (A) | |
 | pon/tor 9.–10. 11. | whatsnextaction | What's new (če izid) | LinkedIn QF, IG, mail | |
 | **tor 10. 11. 8:30** | qubforge | **#2 First month** — mejniki WNA + kako delamo | LinkedIn stran | deli zadnji What's new; osnutek tor 3. 11. |
@@ -88,7 +88,7 @@ Zagon se je premaknil s pon 28. 9. na **pet 9. 10.** (✅ Vladimir, 8. 10.: najp
 | pon 12. 10. do 9:00 | scenarij #1 Capture | potrdi do torka |
 | vsak pon | scenarij + tekst petkovega videa | potrdi do torka |
 | vsak čet | končni video + teksti objav po platformah | pregled |
-| vsak pet | — | objavi (ali potrdi objavo); oznaka AI samo IG; brez samodejnih podnapisov |
+| vsak pet | — | objavi: LinkedIn QF 9:00–10:00, YT, TikTok, IG 17:00–18:00; oznaka AI samo IG; brez samodejnih podnapisov |
 | teden pred vsako personal/QubForge objavo | osnutek | dopolni s svojimi lekcijami, potrdi |
 | pon 7. 12. | tabela številk po platformah za revizijo | odloči zožanje |
 | ted 14.–18. 12. | načrt januarja | potrdi |

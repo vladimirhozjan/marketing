@@ -127,11 +127,19 @@ Product Hunt (ob native zagonu).
 
 **Izpuščeno namenoma:** X, Reddit, Facebook skupine, Threads, Bluesky, Pinterest, Snapchat.
 
+**Novoletni val ✅ smer (Vladimir, 26. 10.):** do decembra gradiva kanale in zalogo vsebin (petkovi videi); nato ciljano v productivity skupine po raznih medijih **pred novim letom in takoj po** (novoletne zaobljube). To odpira Reddit in skupine, ki sta zgoraj izpuščena: ⬜ katere skupine in mediji ter pravila sodelovanja, odločitev pri reviziji 7. 12. 📝 Do takrat naj bodo UTM in "kje si slišal za nas" urejeni, da bo val merljiv.
+
+### SEO in mreža (prvo leto) 📝 (Claude, 26. 10.; ⬜ odločitev pri reviziji 7. 12.)
+✅ Cilj (Vladimir, 26. 10.): prvo leto je gradnja mreže in višje mesto na Googlu; cena in ponudbe pridejo na vrsto, ko bo vidnost.
+- **Vsebina na whatsnextaction.com za iskanja bolečine:** persona GTD ne pozna, zato išče težavo ("too many things in my head", "how to stop forgetting tasks"), ne "GTD app". Vsak petkov video dobi kratek članek na isto temo (video vstavljen v članek).
+- **Povezave na stran:** AlternativeTo, imeniki aplikacij, kasneje Product Hunt (native zagon) in imeniki MCP strežnikov (MCP server iz roadmapa).
+- ✅ Spletna stran ima prostor za članke (Vladimir, 26. 10.); razvoj ni potreben.
+
 ## 7. Vsebinska strategija ✅ (podrobnosti 📝)
 
 **Format ✅:** kratki AI-generirani videi (Higgsfield AI, animirano 3D), glas je AI glas **Julian** (ElevenLabs preset prek Higgsfielda). ✅ 24. 9. Vladimir: njegov glas in klon odpadeta. Vso vsebino izdela Claude. Vse v angleščini.
 
-**Ritem ✅:** petek = 1 video tedensko. Pon/tor ob updatu platforme = kratka objava "What's new". Prvi večji dogodek = napoved zagona ("It's out"), nato kratki klipi z mini funkcijami v nekaj sekundah (npr. "imaš veliko stvari v glavi — daj jih v platformo").
+**Ritem ✅:** petek = 1 video tedensko. "What's new" ✅ (Vladimir, 26. 10.; prej pon/tor ob vsakem izidu): broadcast obstoječim uporabnikom enkrat na mesec, samo večje stvari. Javno aplikacijo razkrivamo teden za tednom, funkcijo za funkcijo v petkovih videih ✅ (Vladimir, 26. 10.); ločenih objav ob izidih ni. Prvi večji dogodek = napoved zagona ("It's out"), nato kratki klipi z mini funkcijami v nekaj sekundah (npr. "imaš veliko stvari v glavi — daj jih v platformo").
 
 **Vsebinski stebri (razmerje čez leto) 📝:**
 1. **Feature in seconds** (~40 %) — ena mini funkcija, en trenutek olajšanja, 8–20 s.
@@ -172,7 +180,7 @@ Product Hunt (ob native zagonu).
 
 ## 10. Časovnica in koledar ✅ (datumi ⬜)
 
-- Ritem: petek video; pon/tor "What's new" ob izidu; personal in QubForge mesečno ob torkih ob 8:30 s 14-dnevnim zamikom.
+- Ritem: petek video; "What's new" mesečni broadcast uporabnikom; personal in QubForge mesečno ob torkih ob 8:30 s 14-dnevnim zamikom.
 - Faze 1–7 po pogl. 7.
 - Zagon ✅ 8.–9. 10. 2026; datum native zagona ⬜ (uskladiti z orkestratorjem).
 - **Revizijske točke 📝:** po 8 tednih (kateri persona/platforma se odziva → zožanje); konec februarja 2027 (po januarskem vrhu; postavitev KPI); maj 2027 (poletni ritem, Team push).
@@ -223,3 +231,19 @@ Za primerjavo: personal #1 (15. 9.) 1.497 prikazov, 49 reakcij, 12 komentarjev.
 - **TikTok je slabši:** povprečen ogled 1,78 s (prej 6,64 s), odhod še vedno pri 0:01. Hook z obrazom in vrtincem listkov TikTok gledalca ne ustavi; pri 20 s videu to pomeni, da skoraj nihče ne vidi pravega UI.
 - **Registracije:** +2 uporabnika od 12. 10. (iz admina ni razvidno, od kod; lahko tudi demo račun). Brez UTM in "kje si slišal za nas" vpliva videa ne moremo meriti.
 - 📝 Predlog za Clarify (odloči Vladimir): na TikToku preizkusiti drug prvi kader, npr. pravi UI s 40 vnosi in velikim napisom "40 things. Now what?" od kadra 0, H6 pa za tem. Na YT in IG ostane potrjena različica. Tako dobimo neposredno primerjavo hooka.
+
+### Video #2 Clarify: dan 3 (pon 26. 10. 2026, ~3 dni po objavi; prebrano prek Claude in Chrome)
+| Kanal | Metrika | Clarify dan 3 | Capture dan 3 |
+|---|---|---|---|
+| TikTok (hook: pravi UI od kadra 0) | ogledi / skupni čas / povp. čas / do konca | **272** / 6 min 32 s / **1,45 s** / 0,7 % · 1 všeček, 0 komentarjev, deljenj, shranjenih · **+1 sledilec** · For You 99,6 % · večina odide pri **0:01** | 232 / 6 min 57 s / 1,78 s / 0,9 % |
+| YouTube Short (hook: H6 3D) | ogledi / nadaljevanje ogleda / povp. trajanje | **71** / 11,8 % / **0:08** (video 0:22) · naročniki: brez podatka · zadnjih 48 h: 1 · 100 % vir kratki videi; skoraj vsi ogledi v prvih urah | 65 / 15,2 % / 0:53 |
+| Instagram Reel (hook: H6 3D) | ogledi / gledalci / interakcije | **160** / 113 (79,2 % nesledilci) / 2 všečka, 1 komentar (žaljiv, skril Vladimir; ni pravi odziv), 0 shranjenih, deljenj, sledilcev · obiski profila 0 | 40 / 32 / 3 všečki |
+| LinkedIn QubForge | prikazi / ogledi / kliki / reakcije | **31 / 4 / 3 / 1** (Vladimir) · Capture do 25. 10.: 77 / 21 / 13 · stran 30 dni: 188 prikazov, 6 reakcij, 1 repost · stran 21 sledilcev · podnapisov ni (Vladimir, 26. 10.; obvestilo "Auto captions have been added" je zastarelo) | 1 / 21 |
+| Admin WNA | uporabniki / registracije ta teden / DAU | **24** (od 19. 10. **+0**) / 0 (pon dopoldne, teden od ponedeljka) / 0 · opravljeno ta teden 0 · stuff 126, akcije 566, projekti 39 · Inbox povp. 3,6 · uporabnikov s podatki 16 · sistem zdrav, verzija 1.1.56 | 24 / 0 / 1 |
+
+**Ugotovitve (📝 Claude):**
+- **Instagram raste** (40 → 160, 4×, 79 % nesledilci): edini kanal, kjer doseg z vsakim videom zraste. Edini komentar je bil žaljiv (Vladimir ga je skril).
+- **A/B hook na TikToku ni pomagal:** pravi UI od kadra 0 ima 1,45 s povprečja, H6 pri Capture 1,78 s; odhod je v obeh primerih pri 0:01. Problem ni v sliki prvega kadra, ampak TikTok gledalcu v prvi sekundi ne da razloga, da ostane (verjetno brez zvoka ali premalo kontrasta/gibanja). Prvi sledilec na TikToku.
+- **YouTube padel:** povp. 0:08 namesto 0:53; Capture so vrteli večkrat, Clarify ne. 71 ogledov skoraj vseh v prvih urah, potem 1 v 48 h: YouTube ga ni potisnil naprej.
+- **LinkedIn QubForge** ostaja brez dosega (stran 21 sledilcev); podnapisi se vklopijo pri vsakem videu sami.
+- **Registracije: 0 novih od 19. 10.** (24 uporabnikov). ~500 ogledov Clarify ni prineslo nobenega uporabnika; od zagona 9. 10. sta prišla samo 2. Brez UTM in "kje si slišal za nas" ne vemo, ali gledalci sploh pridejo na stran.

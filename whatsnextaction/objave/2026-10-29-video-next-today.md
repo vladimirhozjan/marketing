@@ -6,7 +6,7 @@
 - Vizual: 📝 en 3D prizor za hook (H7), nato pravi UI čez dve tretjini videa (seznam Next Actions, premik treh stvari v Today, kljukica), zaključna kartica.
 - Sporočilo: 2 "vsaka stvar ima naslednji korak" → tagline *Know your next action.* (ime produkta); hook iz koledarja *"Not everything. Just today."*
 - Dolžina: 📝 okoli 19 s (naracija ~13 s)
-- Status: 📝 predlog (Claude, tor 20. 10.), ⬜ potrditev
+- Status: ✅ scenarij potrjen (Vladimir, pon 26. 10.), ključni kader H7-3d-1
 
 Pravila: brez "GTD" v govoru; brez "AI-powered"; brez pomišljajev; vsak stavek naracije ima napis na zaslonu; oznaka AI ✅ samo Instagram; samodejni podnapisi nikjer (LinkedIn: ob nalaganju izklopi, sicer ⋯ → Edit captions → Remove captions); TikTok *Your brand* ✅; YouTube "ni za otroke" ✅; brez primerjave z drugimi aplikacijami.
 
@@ -17,15 +17,16 @@ Clarify se konča z *"Everything else gets one clear next step"* in napovedjo *"
 ## Kaj potrebujem od tebe
 
 **Do pon 26. 10. (potrditev; brez nje ne začnem s prizorom)**
-- [ ] 1. Scenarij kot celota.
-- [x] 2. ✅ Hook prizor H7 (Vladimir, 20. 10.); ključni kadri narejeni, ⬜ izbira.
+- [x] 1. ✅ Scenarij kot celota (Vladimir, 26. 10.).
+- [x] 2. ✅ Hook prizor H7 (Vladimir, 20. 10.); ✅ ključni kader **H7-3d-1** (Vladimir, 26. 10.).
 - [ ] 3. Glasba: 📝 ista "One Last Click", drug izrez (prepoznaven zvok serije).
 - [ ] 4. Napoved na kartici: 📝 *Next week: waiting on someone?* (#4 Waiting For, pet 6. 11.)
-- [ ] 5. TikTok različica hooka: ⬜ odločiva pon 26. 10. po številkah Clarify (A/B, dan 3). Če je UI od kadra 0 boljši, ga ponoviva.
+- [x] 5. ✅ TikTok različica hooka (Vladimir, 26. 10.): UI od kadra 0 pri Clarify ni pomagal (1,45 s proti 1,78 s); Vladimir: "če bo zgledalo kot reklama, bodo vsi takoj odšli" → TikTok dobi **domač začetek**: posnetek roke s telefonom (snema drug telefon), navaden TikTok napis "POV", brez 3D in logotipa do kartice. YT, IG in LinkedIn ostanejo s H7. Glej "TikTok različica" spodaj.
 
 **Sre 28. 10.: UI posnetki** v `whatsnextaction/video/raw/` (navodila spodaj v "Snemanje UI")
 - [ ] 6. Demo račun: 20 stvari v Next Actions, Today prazen.
 - [ ] 7. `next-01-list.MP4`, `next-02-today.MP4`, `next-03-done.MP4`.
+- [ ] 7b. Za TikTok: `next-00-hand.MOV`, roka s telefonom, posneto z drugim telefonom (navodila v "Snemanje UI", posnetek 0).
 
 **Čet 29. 10. (objavljaš ti)**
 - [ ] 8. Opisi po platformah (spodaj).
@@ -44,6 +45,17 @@ Clarify se konča z *"Everything else gets one clear next step"* in napovedjo *"
 | 13,6–19 | Zaključna kartica: logotip G4 na teal gradientu | "Know your next action. Start free at whatsnextaction.com." | ***Know your next action.*** → *whatsnextaction.com*; spodaj manjše: *Next week: waiting on someone?* |
 
 **Delež pravega UI:** 2,2–13,6 s = 11,4 s od ~19 s (60 %). En 3D prizor; olajšanje nosi kratek seznam Today in kljukica, ne nov prizor.
+
+### TikTok različica ✅ (Vladimir, 26. 10.)
+
+Cilj: prve sekunde naj bodo videti kot objava navadnega človeka, ne kot oglas znamke.
+
+| s | Kader | Naracija | Napis |
+|---|---|---|---|
+| 0–~3,0 | **Posnetek roke** (`next-00-hand`): roka drži iPhone z odprtim Next Actions, palec drsi po dolgem seznamu, ustavi se; posneto z drugim telefonom, rahlo tresenje je dobrodošlo; brez okvirja iPhona, brez logotipa | brez glasu (samo glasba, tišje) | navaden TikTok napis (bel, črna obroba, sredina zgoraj): ***POV: 20 things on your list and no idea where to start*** |
+| od ~3,0 | naprej kot glavna različica od "Not with all twenty." (UI v okvirju, Julian, kartica) | | |
+
+Dolžina ~19,5 s. Opis in nastavitve TikToka ostanejo, Cover: kader s POV napisom.
 
 **1:1 (LinkedIn QF, IG feed):** ista časovnica, telefon manjši in na sredini, napisi zgoraj, kot pri Capture (`build.py` izdela obe razmerji).
 
@@ -81,7 +93,7 @@ Postopek kot pri Clarify: ključni kader (`gpt_image_2_5`, 9:16, referenca H2b-3
 **Poziv (EN):**
 - **H7 (0–2,2 s), hook:** *Stylized 3D animation look, soft clay-like materials, gentle global illumination, saturated teal in the shadows and warm amber morning light, not cartoonish. The same man as in the reference, about 40, mid-level manager in a business casual shirt, sits at a kitchen table in the morning with a cup of coffee, holding a phone. He scrolls a long list with his thumb, slows down, stops, and looks up straight into the camera with a calm but puzzled "where do I even start?" expression. Slow push-in toward his face. Phone screen faces away from the camera. No readable text.*
 
-**Ključni kadri (tor 20. 10.)** ✅ prizor potrjen (Vladimir, 20. 10.) v `video/higgsfield/3d/`: `H7-3d-1/2/3.png`, pregled `H7-pregled.jpg` (prvi na levi je referenca H2b). Job ID: 55aea6f4, 919f210c, 6d9efd5c. ⬜ izbira.
+**Ključni kadri (tor 20. 10.)** ✅ prizor potrjen (Vladimir, 20. 10.) v `video/higgsfield/3d/`: `H7-3d-1/2/3.png`, pregled `H7-pregled.jpg` (prvi na levi je referenca H2b). Job ID: 55aea6f4, 919f210c, 6d9efd5c. ✅ izbran H7-3d-1 (Vladimir, 26. 10.).
 
 Rezerva, če H7 ne uspe: `H6-video-2.mp4` iz Clarify (pogled v kamero) z napisom čez.
 
@@ -115,6 +127,12 @@ Nastavitve kot pri Capture in Clarify: iPhone, snemanje zaslona iz Nadzornega ce
 
 Oznake (@home, @errands …) ne dodajaj; context filter je tema za #5.
 
+**Posnetek 0, `next-00-hand.MOV` (~8 s, samo za TikTok; snema drug telefon ali kdo drug):**
+1. iPhone v roki, na zaslonu Next Actions z 20 stvarmi; za mizo, dnevna svetloba, skodelica kave v ozadju je dobrodošla (zrcali H7).
+2. Drugi telefon pokončno (9:16), 30–40 cm nad ramo ali od strani, tako da je zaslon iPhona berljiv in čez pol kadra; obraz ni potreben.
+3. Palec počasi drsi po seznamu navzdol 3–4 s, nato se ustavi. Brez zvoka ali z zvokom, ni pomembno.
+4. Svetlost zaslona iPhona na maksimum, da ni odsevov.
+
 **Posnetek 1, `next-01-list.MP4` (~8 s):**
 1. Odpri Next Actions. Miruj 1 s.
 2. Počasi podrsaj do dna seznama in nazaj na vrh (~4 s). Miruj 1 s.
@@ -139,7 +157,7 @@ Sprostitev pesmi (27,55 s) poravnam na stran Today s tremi stvarmi (~9 s videa),
 
 Vrstni red: 1 YouTube Shorts → 2 TikTok → 3 Instagram Reels → 4 LinkedIn QubForge.
 
-Datoteke (pripravim sre 28. 10.): `whatsnextaction/video/wna-next-today-9x16.mp4` (YT, TikTok, IG), `wna-next-today-1x1.mp4` (LinkedIn), naslovnica `wna-next-today-cover-9x16.jpg`.
+Datoteke (pripravim sre 28. 10.): `whatsnextaction/video/wna-next-today-9x16.mp4` (YT, IG), `wna-next-today-tiktok-9x16.mp4` (TikTok), `wna-next-today-1x1.mp4` (LinkedIn), naslovnica `wna-next-today-cover-9x16.jpg`.
 
 ### 1 · YouTube Shorts
 - Naslov:

@@ -82,7 +82,7 @@
 | Connections, delegiranje, deljeni projekti | – | – | da |
 
 ## 9. Kar prihaja (roadmap: Now / Next) — za "What's new" objave, ne za obljube v videih
-- Izide okt 2026: **Google Calendar sync** (dvosmerno, Pro/Team; What's new 📝 pon 26. 10.), **BYOS Google Drive** (priponke v lastnem Drivu, tudi za Free; What's new 📝 pon 2. 11.), Google account connection
+- Izide okt 2026: **Google Calendar sync** (dvosmerno, Pro/Team), **BYOS Google Drive** (priponke v lastnem Drivu, tudi za Free), Google account connection; ✅ (Vladimir, 26. 10.) brez ločenih objav: pridejo na vrsto kot petkov video, uporabnikom v mesečnem What's new (`objave/2026-11-02-mail-whats-new-oktober.md`)
 - V delu: **Apple / Microsoft SSO** (⬜ stanje preveri v orkestratorju)
 - Načrtovano: priponke prek Email to Inbox, **globalno iskanje**, Cmd+K paleta, **onboarding ob prvi prijavi**, množične operacije, izboljšave Weekly Review (napredek, praznovanje), mobile-web poliranje (poteze, pull-to-refresh), **streaks**, prazna stanja z ilustracijami, Undo, Notes, USD za ne-EU
 - Kasneje: native iOS/Android (offline, push, widget, share extension), Horizons of Focus, Natural Planning Model, checklists, rich capture (foto/zvok), javni API, izvoz podatkov

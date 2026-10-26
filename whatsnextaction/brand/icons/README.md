@@ -32,4 +32,4 @@ Dodatno: `wna-logo-wide-G4-1460x300.png` (ležeč logotip za svetla ozadja, pros
 | Stripe → Settings → Branding: *Icon* | `wna-avatar-G4-1024.png` (kvadrat, < 512 KB) |
 | Stripe → Settings → Branding: *Logo* | `wna-logo-wide-G4-1460x300.png` |
 | Stripe: *Brand color* / *Accent color* | `#0e7490` / `#22d3ee` |
-| Paywiser → Brand | kvadrat `wna-avatar-G4-1024.png`, ležeč `wna-logo-wide-G4-1460x300.png` (kar zahteva) |
+| Paywiser → Brands: *Brand logo* | `wna-logo-wide-G4-1000x205.png` (Paywiser sprejme največ 1000 × 1000; izris: `ffmpeg -i wna-logo-wide-G4-1460x300.png -vf scale=1000:-1:flags=lanczos wna-logo-wide-G4-1000x205.png`) |
