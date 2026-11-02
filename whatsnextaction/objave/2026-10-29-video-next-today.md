@@ -1,12 +1,14 @@
 # WNA · Video #3 Next Actions + Today
 
 - Kanal: vse štiri (persona A in B, koledar): YouTube Shorts, TikTok, Instagram Reels (9:16) in LinkedIn QubForge (1:1), kot Capture.
-- Datum: **čet 29. 10. 2026** ✅ (Vladimir, 19. 10.: namesto pet 30. 10.), ~9:00.
+- Datum: ~~čet 29. 10. 2026~~ → **pet 30. 10. 2026 po 18:00, vse štiri** ✅ (Vladimir, 29. 10.; UI posnetki še niso bili narejeni).
 - Cikel 📝 (en dan krajši, Vladimir ima čet 22. 10. Clarify): tor 20. 10. scenarij (jaz) → do pon 26. 10. potrditev (ti) → pon 26. 10. Higgsfield H7, Julian, glasba, predloga brez UI (jaz) → **sre 28. 10. UI posnetki (ti) in montaža isti dan (jaz)** → čet 29. 10. objava (ti).
 - Vizual: 📝 en 3D prizor za hook (H7), nato pravi UI čez dve tretjini videa (seznam Next Actions, premik treh stvari v Today, kljukica), zaključna kartica.
 - Sporočilo: 2 "vsaka stvar ima naslednji korak" → tagline *Know your next action.* (ime produkta); hook iz koledarja *"Not everything. Just today."*
 - Dolžina: 📝 okoli 19 s (naracija ~13 s)
-- Status: ✅ scenarij potrjen (Vladimir, pon 26. 10.), ključni kader H7-3d-1
+- Status: ✅ scenarij potrjen (Vladimir, pon 26. 10.), ključni kader H7-3d-1 · ✅ objavljeno pet 30. 10.
+
+**Objavljeno pet 30. 10.:** [YouTube](https://www.youtube.com/shorts/odPZFP7T7R0) · [TikTok](https://www.tiktok.com/@whatsnextaction/video/7702519875066989846) · [Instagram](https://www.instagram.com/p/DfIKio_KVZQ/) · [LinkedIn QubForge](https://www.linkedin.com/posts/qubforge_whatsnextaction-productivity-focus-activity-7521993636700643328-vxLv)
 
 Pravila: brez "GTD" v govoru; brez "AI-powered"; brez pomišljajev; vsak stavek naracije ima napis na zaslonu; oznaka AI ✅ samo Instagram; samodejni podnapisi nikjer (LinkedIn: ob nalaganju izklopi, sicer ⋯ → Edit captions → Remove captions); TikTok *Your brand* ✅; YouTube "ni za otroke" ✅; brez primerjave z drugimi aplikacijami.
 
@@ -24,9 +26,9 @@ Clarify se konča z *"Everything else gets one clear next step"* in napovedjo *"
 - [x] 5. ✅ TikTok različica hooka (Vladimir, 26. 10.): UI od kadra 0 pri Clarify ni pomagal (1,45 s proti 1,78 s); Vladimir: "če bo zgledalo kot reklama, bodo vsi takoj odšli" → TikTok dobi **domač začetek**: posnetek roke s telefonom (snema drug telefon), navaden TikTok napis "POV", brez 3D in logotipa do kartice. YT, IG in LinkedIn ostanejo s H7. Glej "TikTok različica" spodaj.
 
 **Sre 28. 10.: UI posnetki** v `whatsnextaction/video/raw/` (navodila spodaj v "Snemanje UI")
-- [ ] 6. Demo račun: 20 stvari v Next Actions, Today prazen.
-- [ ] 7. `next-01-list.MP4`, `next-02-today.MP4`, `next-03-done.MP4`.
-- [ ] 7b. Za TikTok: `next-00-hand.MOV`, roka s telefonom, posneto z drugim telefonom (navodila v "Snemanje UI", posnetek 0).
+- [x] 6. Demo račun: 20 stvari v Next Actions, Today prazen (Claude prek MCP `wna-demo`, 29. 10.).
+- [x] 7. `next-01-list.MP4`, `next-02-today.MP4`, `next-03-done.MP4` (Vladimir, čet 29. 10.; 02 in 03 imata zamenjani imeni, glej `cut_ui.py`).
+- [x] 7b. Za TikTok: `next-00-hand.MOV`, roka s telefonom, posneto z drugim telefonom (navodila v "Snemanje UI", posnetek 0).
 
 **Čet 29. 10. (objavljaš ti)**
 - [ ] 8. Opisi po platformah (spodaj).
@@ -95,6 +97,18 @@ Postopek kot pri Clarify: ključni kader (`gpt_image_2_5`, 9:16, referenca H2b-3
 
 **Ključni kadri (tor 20. 10.)** ✅ prizor potrjen (Vladimir, 20. 10.) v `video/higgsfield/3d/`: `H7-3d-1/2/3.png`, pregled `H7-pregled.jpg` (prvi na levi je referenca H2b). Job ID: 55aea6f4, 919f210c, 6d9efd5c. ✅ izbran H7-3d-1 (Vladimir, 26. 10.).
 
+**Videi (tor 27. 10.)** (Kling 3.0 pro, 5 s, brez zvoka, 9:16, začetni kader H7-3d-1) v `video/higgsfield/3d/`, pregled `H7-video-pregled.jpg` (zgoraj 1, spodaj 2, kader na 0,5 s):
+- `H7-video-1.mp4` (41235127): zre v kamero, drsi, srkne kavo, konča s pogledom v kamero; ⚠️ med pitjem sta na mizi dve skodelici (napaka kontinuitete, 2,5–4 s).
+- `H7-video-2.mp4` (f33f688d): drsi s prstom, prime skodelico, konča z začudenim pogledom v kamero; ⚠️ pri 0,5 s kratek oblaček pare (izven izreza).
+- ❌ oba zavrnjena (Vladimir, 27. 10.): "pri 1 vzame skodelico iz telefona, pri 2 pa ogenj skoči iz telefona"
+
+**Videi, drugi krog (tor 27. 10.)**, poziv poenostavljen (samo palec in pogled, skodelica ostane na mizi, brez dima, pare in ognja, cfg 0,7), pregled `H7-video-pregled-2.jpg` (zgoraj 3, spodaj 4, kader na 0,25 s):
+- `H7-video-3.mp4` (ea6feda6): roka na bradi, spusti roko, gleda v telefon, na koncu miren, rahlo zmeden pogled v kamero; brez napak.
+- `H7-video-4.mp4` (3bca80b4): drsi s kazalcem, na koncu široko odprte oči in odprta usta; brez napak, izraz bolj pretiran.
+- ✅ izbran **H7-video-3** (Vladimir, 27. 10.; 4 ne, "premika usta, kot da nekaj govori"), izrez 2,4–5,0 s → `video/wna-next-today/assets/h7.mp4`.
+
+**Montaža 📝 (tor 27. 10.):** projekt `video/wna-next-today/` (`build.py` + `template.html.tpl` izdela 9:16, TikTok v `wna-next-today-tiktok/`, 1:1 v `wna-next-today-1x1/`). Časovnica: H7 0–2,6 · UI 2,6–14,0 · kartica 14,0–20,5 s; TikTok roka + POV 0–3,0, nato vse +0,4 s (20,9 s). Julian j1 0,05 · j2 2,75 · j3 4,40 · j4 8,80 · j5 11,40 · j6 14,20. Glasba od 18,95 s pesmi (TikTok 18,55 s, pod roko tišje). UI in roka sta zaenkrat prazna nadomestka; števec NEXT 20 → TODAY 0–3 → 2 se poravna na prave tape v sre. HyperFrames check ✅ vse tri. Zavrnjeni H7-video-1/2/4 pobrisani (27. 10.), ostajajo pregledi `.jpg`.
+
 Rezerva, če H7 ne uspe: `H6-video-2.mp4` iz Clarify (pogled v kamero) z napisom čez.
 
 **Strošek:** 3 ključni kadri × 0,25 + 2 videa × ~9 ≈ 19 kreditov.
@@ -149,15 +163,21 @@ Oznake (@home, @errands …) ne dodajaj; context filter je tema za #5.
 
 Po snemanju: demo račun pusti; za #4 Waiting For bo prav, da je v Next Actions še nekaj stvari.
 
+**Montaža z UI (čet 29. 10.):** `wna-next-today/cut_ui.py` zreže UI (seznam 2,6–4,4 · trije premiki ~1,7× 4,4–7,9 · meni in Today 7,9–8,6 · Today 8,6–10,5 · pretop · kljukica 12,0) in roko za TikTok (3 s); števec Today 1/2/3 na 5,70/6,75/7,75, nazaj na 2 pri 12,10. Check ✅ vse tri. Končni videi (−14 LUFS) v `whatsnextaction/video/`: `wna-next-today-9x16.mp4`, `wna-next-today-tiktok-9x16.mp4`, `wna-next-today-1x1.mp4`. TikTok: posnetek roke z iPhona je HDR (HLG); HyperFrames ga sestavi čez vse plasti (izginil POV, odrezan števec), zato ga `cut_ui.py` pretvori v SDR BT.709. ✅ pregled (Vladimir, 29. 10.).
+
+## Julian ✅ (tor 27. 10.)
+
+`video/next-today/julian/` (mp3 + wav 48 kHz), vsi dobesedno potrjeni z Whisper (large-v3-turbo). Dolžine: j1 2,56 · j2 1,44 · j3 1,76 · j4 2,24 · j5 2,08 · j6 4,80 s (j6 prevzet iz Clarify, isto besedilo) = 14,9 s govora (ocena 13,1), video bo ~20,5 s. Rezerve r1 1,84 · r2 1,76 · r3 2,72 s.
+
 ## Glasba 📝 `raw/One Last Click.wav` (ista kot Capture in Clarify)
 
 Sprostitev pesmi (27,55 s) poravnam na stran Today s tremi stvarmi (~9 s videa), zato video začne pri ~18,5 s pesmi. Če bi raje novo podlago, pripravim Suno navodila.
 
-## Objave po platformah (čet 29. 10., objavljaš ti) 📝
+## Objave po platformah (pet 30. 10. po 18:00, objavljaš ti) ✅ videi potrjeni (Vladimir, 29. 10.)
 
 Vrstni red: 1 YouTube Shorts → 2 TikTok → 3 Instagram Reels → 4 LinkedIn QubForge.
 
-Datoteke (pripravim sre 28. 10.): `whatsnextaction/video/wna-next-today-9x16.mp4` (YT, IG), `wna-next-today-tiktok-9x16.mp4` (TikTok), `wna-next-today-1x1.mp4` (LinkedIn), naslovnica `wna-next-today-cover-9x16.jpg`.
+Datoteke ✅ (čet 29. 10.) v `whatsnextaction/video/`: `wna-next-today-9x16.mp4` (YT, IG), `wna-next-today-tiktok-9x16.mp4` (TikTok), `wna-next-today-1x1.mp4` (LinkedIn); naslovnici `wna-next-today-cover-9x16.jpg` (YT, IG) in `wna-next-today-tiktok-cover-9x16.jpg` (TikTok), sličica `wna-next-today-thumbnail-1x1.jpg` (LinkedIn); vse na kadru "Not everything. Just today."
 
 ### 1 · YouTube Shorts
 - Naslov:
@@ -212,4 +232,4 @@ Start free: https://whatsnextaction.com
 
 #WhatsNextAction #productivity #focus
 ```
-- Nastavitve: samodejni podnapisi izklopi ob nalaganju · naslov videa "Not everything. Just today."
+- Nastavitve: sličica `wna-next-today-thumbnail-1x1.jpg` · samodejni podnapisi izklopi ob nalaganju (sicer ⋯ → Edit captions → Remove captions) · naslov videa "Not everything. Just today." · LinkedIn nima oznake AI.

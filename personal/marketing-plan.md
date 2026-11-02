@@ -61,3 +61,18 @@ LinkedIn osebni profil. Vse v angleščini. (X za personal: morda kasneje za bui
 | Stopnja angažiranosti | 42 / 894 = 4,7 % |
 
 Primerjava: objava "Goodbye NiceHash" (2025) 4.753 prikazov, 73 reakcij, 18 komentarjev. Objava #1 doseže ~19 % teh prikazov, a višjo angažiranost na prikaz. Demografija gledalcev v LinkedInu ni dostopna brez Premiuma.
+
+### Objava #2 "Building software in the age of agents" — stanje dan 3 (pet 30. 10. 2026, LinkedIn Post analytics)
+| Metrika | Vrednost | #1 (48 h) |
+|---|---|---|
+| Prikazi (impressions) | 1.085 | 894 |
+| Doseženi člani | 708 | – |
+| V mreži / izven mreže | 21 % / 79 % | – |
+| Reakcije | 23 | 36 |
+| Komentarji | 4 | 6 |
+| Deljenja / shranjeno / poslano | 0 / 2 / 0 | 0 / 0 / 0 |
+| Ogledi profila iz objave | 13 (2 NiceHash, 1 Povio, 1 Bitstamp) | 14 |
+| Novi sledilci iz objave | 0 | 0 |
+| Stopnja angažiranosti | 29 / 1.085 = 2,7 % | 4,7 % |
+
+Demografija (vrh): Software Development 31 %, Ljubljana 22 %, Software Engineer 15 %, Entry 32 %, podjetja 51–200 21 %. 📝 Opažanje: #2 doseže več ljudi, večinoma izven mreže in iz razvoja (tema zadene stroko), a manj reakcij na prikaz kot osebna novica #1; sledilcev ne prinese nobena.

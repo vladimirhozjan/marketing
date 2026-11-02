@@ -11,7 +11,7 @@
 - Hkrati: zaslon (Cmd + Shift + 5 → Record Entire Screen) in kamera (QuickTime → New Movie Recording), 2–3 min, pravo delo, brez poziranja, zvok ni potreben.
 - Datoteki v `personal/video/raw/`.
 - Claude: timelapse 10–15 s, kamera v krogu/zaobljenem okvirju spodaj desno, 1:1, brez zvoka, zanka (ffmpeg); rezerva mirujoč kader. Rok: pred intervjujem pon 26. 10.
-- Status: ✅ besedilo v6 potrjeno (Vladimir, 26. 10.), vizual `personal/video/personal-02-agents-1x1.mp4`; objava tor 27. 10. 8:30 (objavi Vladimir). Tema ✅ (Vladimir, 9. 10.): kako je razvijati v dobi AI, skozi izkušnjo prvega produkta
+- Status: ✅ besedilo v6 potrjeno (Vladimir, 26. 10.), vizual `personal/video/personal-02-agents-1x1.mp4`; ✅ objavljeno tor 27. 10. (Vladimir): https://lnkd.in/p/dn96zEdb Tema ✅ (Vladimir, 9. 10.): kako je razvijati v dobi AI, skozi izkušnjo prvega produkta
 
 Pravila: prva oseba, iskreno, brez samohvale, brez ponavljanja življenjepisa, brez pomišljajev, brez podpisa, ne prodaja WNA (lahko ga omeni kot primer, brez linka in CTA), brez "AI-powered" in "revolutionary".
 

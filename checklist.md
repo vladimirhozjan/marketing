@@ -1,4 +1,36 @@
-# Checklista (stanje: ponedeljek 26. 10. 2026)
+# Checklista (stanje: ponedeljek 2. 11. 2026)
+
+## Danes, pon 2. 11.
+- [x] What's new oktober 📝 dopolnjen z izidi 27. 10.–1. 11. (Claude): AI asistent in MCP, predloge projektov, Horizons, žive liste, obvestila v brskalniku, Apple prijava
+- [ ] What's new oktober: potrditev in pošiljanje (Vladimir); žive liste na produkciji ✅, za MCP napotilo na Settings, AI Apps ✅ (Vladimir, 2. 11.)
+- [ ] Scenarij #4 Waiting For (Claude), potrditev tor 3. 11.
+
+## Danes, pet 30. 10.
+- [x] #3 Next Actions + Today objavljen na vseh štirih (Vladimir, po 18:00): YT https://www.youtube.com/shorts/odPZFP7T7R0 · TikTok https://www.tiktok.com/@whatsnextaction/video/7702519875066989846 · IG https://www.instagram.com/p/DfIKio_KVZQ/ · LinkedIn QF https://www.linkedin.com/posts/qubforge_whatsnextaction-productivity-focus-activity-7521993636700643328-vxLv
+- [x] Analitika personal #2 dan 3 → `personal/marketing-plan.md` pogl. 6: 1.085 prikazov (79 % izven mreže), 708 doseženih, 23 reakcij, 4 komentarji, 2 shranjeni, 13 ogledov profila, 0 novih sledilcev, angažiranost 2,7 % (#1: 4,7 %)
+
+## Danes, čet 29. 10.
+- [x] #3 Next Actions + Today: objava ✅ premaknjena na **pet 30. 10. po 18:00, vse štiri** (Vladimir); koledar, scenarij in taska v WNA marketing popravljeni
+- [x] MCP `wna-demo` (prod, demo račun) dodan; demo račun pripravljen (Claude): Today prazen, 20 stvari v Next Actions po scenariju; prejšnje stvari in oba demo projekta v Someday (brez oznak)
+- [x] #3 UI posnetki (Vladimir, 13:33–13:44)
+- [x] #3 montaža (Claude): `whatsnextaction/video/wna-next-today-9x16.mp4` (YT, IG, 20,5 s), `wna-next-today-tiktok-9x16.mp4` (TikTok, 20,9 s), `wna-next-today-1x1.mp4` (LinkedIn QF), −14 LUFS; TikTok: posnetek roke HDR → SDR (sicer HyperFrames skrije napis POV in števec)
+- [x] #3 pregled ✅ (Vladimir, 29. 10.); naslovnici in sličica 1:1 pripravljeni, besedila v scenariju
+- [x] #3 objava → pet 30. 10. (glej zgoraj)
+- [x] WNA prod: task "#3 UI posnetki in pregled videa" zaključen; MCP `wna-prod` zdaj lokalno (`?account=prod`), da se ne prekriva z `wna-demo`
+
+## Danes, sre 28. 10.
+- [x] WNA prod task manager: projekt "WNA marketing" napolnjen s 34 taski do 18. 12. (po videu: potrdi scenarij tor, UI posnetki sre, objava pet; What's new 2. 11. in 30. 11.; revizija 7. 12.; načrt januarja; odprte zadeve brez datuma)
+- [x] Nova projekta "QubForge marketing" in "Personal marketing" (prazna) → brainstorming
+
+## Danes, tor 27. 10.
+- [x] Personal #2 "Building software in the age of agents" objavljen na LinkedIn (Vladimir, v6 + video 1:1): https://lnkd.in/p/dn96zEdb
+- [x] Komentarja pod personal #2 (Vladimir odgovoril): Marko Tarman (koda pod pokrovom, DHH članek) in Matej Grašič (C++: "Speed and a small server bill still matter to me, so that choice stayed mine.")
+- [x] Analitika personal #2 dan 3 → pet 30. 10. (narejeno)
+- [x] #3 H7 videa (2 različici, ~18 kreditov) → `video/higgsfield/3d/H7-video-1/2.mp4`, pregled `H7-video-pregled.jpg`; ❌ oba zavrnjena (skodelica iz telefona, ogenj iz telefona) → drugi krog 3 in 4 (+~18 kreditov) → ✅ **H7-video-3** (Vladimir)
+- [x] #3 Julian 6 stavkov + R1–R3, Whisper potrdil vse → `video/next-today/julian/`
+- [x] #3 glasba in predloge 9:16 + TikTok + 1:1 brez UI (`video/wna-next-today*`), check ✅
+- [x] Poskusni render 9:16 brez UI (Vladimir sprostil disk, 93 GB): `video/wna-next-today/renders/`, časovnica in napisi ✅, glasnost −17,7 LUFS → končni normaliziram na −14
+- [x] Čiščenje (Vladimir: "počisti, česar ne rabiva"): zavrnjeni H7-video-1/2/4, stari surovi rendri Capture/Clarify, snapshots, odvečni ` .mp4` (Clarify render z 22. 10.); končni videi ostanejo
 
 ## Danes, pon 26. 10.
 - [x] Scenarij #3 Next Actions + Today ✅ (Vladimir): H7-3d-1; TikTok dobi domač začetek (roka s telefonom, POV napis, brez 3D in logotipa), YT/IG/LinkedIn s H7; dodatni posnetek `next-00-hand.MOV` v sre
