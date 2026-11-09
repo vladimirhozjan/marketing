@@ -1,9 +1,44 @@
-# Checklista (stanje: ponedeljek 2. 11. 2026)
+# Checklista (stanje: ponedeljek 9. 11. 2026)
+
+## Danes, pon 9. 11.
+- [x] Brainstorm #5 Context tags → scenarij 📝 (Claude): `whatsnextaction/objave/2026-11-13-video-context-tags.md`; @computer → @home, hook "take out the trash", brez 3D (⬜)
+- [ ] **Sre 11. 11. zjutraj** ✅ (Vladimir): najprej landing, nato #5. Landing hero AI asistent: ponovno snemanje (Vladimir, 9. 11.: izboljšana izkušnja, stvari se pojavljajo in izginjajo); pred snemanjem "reset demo" (Claude), `whatsnextaction/objave/landing-hero-ai.md`
+- [x] Scenarij #5 ✅ potrjen, brez 3D (Vladimir, 9. 11.)
+- [ ] #5 Julian, glasba, predloga brez UI (Claude); demo račun za #5 pripravim sre 11. 11. takoj po snemanju landinga (isti demo račun)
+- [x] QF #2: funkcije ponovno preštete (Claude): od 5. 11. samo iPhone aplikacija (še ni javna), ostane 33
+- [x] Analitika #4 (Claude) → `whatsnextaction/marketing-plan.md` pogl. 11: LinkedIn QF 27 prikazov (dan 3) · TikTok 800 (1,4 s) · IG 43 · YT 19 (dan 2) · admin 24 uporabnikov, +0 od 19. 10.
+
+## Sob 7. 11.
+- [x] #4 YouTube Shorts objavljeno (Vladimir): https://youtube.com/shorts/LzATV1bxRXU
+- [x] #4 TikTok objavljeno (Vladimir): https://www.tiktok.com/@whatsnextaction/video/7705333168898854166
+- [x] #4 Instagram Reels objavljeno (Vladimir): https://www.instagram.com/p/DfbrcM6KDKU/
+- [x] Pon 9. 11.: analitika #4 (Claude), vse prebrano v pon
+
+## Danes, pet 6. 11.
+- [x] #4 LinkedIn QF objavljeno (Vladimir): https://www.linkedin.com/posts/qubforge_park-it-forget-it-activity-7524374444711157760-qavR
+- [x] #4 TikTok in Shorts dodana ✅ (Vladimir, 6. 11.), objava prestavljena na sob 7. 11.
+- [x] Pon 9. 11.: analitika #4 dan 3 (Claude), ponovno preštej funkcije za QubForge #2
+
+## Čet 5. 11.
+- [x] Demo račun za #4 pripravljen znova (Claude): Mark (1mo), Bank, Luka, Contractor v Waiting For
+- [x] #4 UI posnetki (Vladimir, 10:53–10:57)
+- [x] #4 montaža (Claude): `whatsnextaction/video/wna-waiting-for-9x16.mp4` (IG), `wna-waiting-for-1x1.mp4` (LinkedIn QF), 22,0 s, −14 LUFS; naslovnica in sličica
+- [x] #4 pregled ✅ (Vladimir, 5. 11.)
+- [x] #4 objava pet 6. 11. (Vladimir): LinkedIn QF ✅, IG 17:00–18:00 (glej pet 6. 11.)
+- [x] WNA prod: projekta QubForge marketing in Personal marketing sta bila prazna → dodane naloge do jan 2027 (Claude): QF #2–#4 potrdi + objava, personal #3–#4 potrdi + objava
+
 
 ## Danes, pon 2. 11.
 - [x] What's new oktober 📝 dopolnjen z izidi 27. 10.–1. 11. (Claude): AI asistent in MCP, predloge projektov, Horizons, žive liste, obvestila v brskalniku, Apple prijava
-- [ ] What's new oktober: potrditev in pošiljanje (Vladimir); žive liste na produkciji ✅, za MCP napotilo na Settings, AI Apps ✅ (Vladimir, 2. 11.)
-- [ ] Scenarij #4 Waiting For (Claude), potrditev tor 3. 11.
+- [x] What's new oktober ✅ poslan (Vladimir, 2. 11.); žive liste na produkciji ✅, za MCP napotilo na Settings, AI Apps ✅ (Vladimir, 2. 11.)
+- [x] Scenarij #4 Waiting For 📝 (Claude): `whatsnextaction/objave/2026-11-06-video-waiting-for.md`, IG + LinkedIn QF, ~21 s, H8 hook, UI 53 %
+- [x] Scenarij #4 ✅ potrjen (Vladimir, 2. 11.), hook "Three people"
+- [x] H8 (Claude, ~19 kreditov): ključni kader ✅ H8-3d-3, video ✅ H8-video-2 (Vladimir) → `video/wna-waiting-for/assets/h8.mp4`; demo račun pripravljen
+- [x] Analitika #3 Next Actions + Today dan 3 → `whatsnextaction/marketing-plan.md` pogl. 11: TikTok 786 (1,6 s), IG 45, YT 7, LinkedIn QF 22 prikazov, admin 24 uporabnikov (+0 od 19. 10.)
+- [x] #4 Julian 6 stavkov + R1–R3, Whisper ✅ (Claude, dan prej): 17,0 s govora → video 22,0 s; `video/waiting-for/julian/`
+- [x] #4 glasba + predloga 9:16 in 1:1 brez UI (Claude): `video/wna-waiting-for/`, `-1x1/`, poskusna rendra ✅; 📝 glasba od 17,8 s, sprostitev na "Mark · 1mo" (pesem prekratka za "Forget it."), ⬜ potrditev
+- [x] QubForge #2 "First month" 📝 osnutek (Claude, dan prej): `qubforge/objave/2026-11-10-objava-linkedin.md`; ✅ besedilo v4 potrjeno (5. 11.), ✅ brez slike; številke ✅ samo 33 funkcij v aplikaciji (brez popravkov in infrastrukture, Vladimir 5. 11.)
+- [ ] UI posnetki #4 (Vladimir, sre 4. 11.)
 
 ## Danes, pet 30. 10.
 - [x] #3 Next Actions + Today objavljen na vseh štirih (Vladimir, po 18:00): YT https://www.youtube.com/shorts/odPZFP7T7R0 · TikTok https://www.tiktok.com/@whatsnextaction/video/7702519875066989846 · IG https://www.instagram.com/p/DfIKio_KVZQ/ · LinkedIn QF https://www.linkedin.com/posts/qubforge_whatsnextaction-productivity-focus-activity-7521993636700643328-vxLv

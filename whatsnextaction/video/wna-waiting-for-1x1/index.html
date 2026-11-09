@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1080" />
+    <title>WNA Waiting For 1x1</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Inter"; src: url("assets/Inter-Bold.ttf") format("truetype"); font-weight: 700; }
+      @font-face { font-family: "Inter"; src: url("assets/Inter-SemiBold.ttf") format("truetype"); font-weight: 600; }
+      @font-face { font-family: "Montserrat"; src: url("assets/Montserrat.ttf") format("truetype"); font-weight: 100 900; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1080px; overflow: hidden; background: #0a0e1a; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "Inter", sans-serif; }
+      .layer { position: absolute; inset: 0; }
+      #bg {
+        background:
+          radial-gradient(ellipse 85% 55% at 50% 66%, rgba(14, 116, 144, 0.6), rgba(10, 14, 26, 0) 70%),
+          linear-gradient(180deg, #0a0e1a 0%, #0c1824 55%, #0a0e1a 100%);
+      }
+      .full { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+      #shade {
+        background: linear-gradient(180deg, rgba(5, 10, 18, 0) 45%, rgba(5, 10, 18, 0.72) 78%, rgba(5, 10, 18, 0.85) 100%);
+        opacity: 0;
+      }
+
+      /* captions */
+      .caps { position: absolute; }
+      #cap-ui { left:40px;width:520px;top:250px;height:480px; }
+      #cap-full { left:50px;right:50px;top:690px;height:300px; }
+      #cap-card { left:60px;right:60px;top:410px;height:220px; }
+      .phrase { position: absolute; inset: 0; display: flex; flex-wrap: wrap; align-content: center; justify-content: center; gap: 0 0.26em; }
+      #cap-ui .phrase { font-size: 88px; }
+      #cap-full .phrase { font-size: 84px; }
+      #cap-card .phrase { font-size: 88px; }
+      .w {
+        display: block; color: #f4f7fb; font-weight: 700; line-height: 1.08; letter-spacing: -0.035em; opacity: 0;
+        text-shadow: 0 6px 30px rgba(0, 0, 0, 0.35);
+      }
+      .w.key { color: #22d3ee; }
+      #cap-card .w.key { color: #a5f3fc; }
+
+      /* phone */
+      #phone-layer { opacity: 0; }
+      #phone {
+        position: absolute; left:585px;top:50px;width:460px;height:971px;
+        border-radius: 56px; padding: 13px;
+        background: linear-gradient(145deg, #3a3e48, #1b1d22 42%, #0f1116);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 60px 120px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+        transform-origin: 70% 30%;
+      }
+      #screen { position: relative; width: 100%; height: 100%; border-radius: calc(56px - 13px); overflow: hidden; background: #f3f6f7; }
+      /* placeholder until the UI recordings (wed 4. 11.) */
+      #ph { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 40px; font-family: "Inter"; font-weight: 600; font-size: 40px; line-height: 1.3; color: #64748b; }
+      #ui { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; }
+
+
+      /* end card */
+      #card { opacity: 0; background: radial-gradient(ellipse 90% 60% at 30% 20%, rgba(34, 211, 238, 0.18), rgba(0, 0, 0, 0) 60%), linear-gradient(160deg, #164e63 0%, #0e7490 100%); }
+      #logo {
+        position: absolute; left: 50%; top: 190px; width: 170px; height: 170px; margin-left: calc(170px / -2);
+        /* G4 logo: white circle with its own shadow baked into the png */
+      }
+      #url { position: absolute; left: 0; right: 0; top: 680px; text-align: center; color: #fff; opacity: 0; }
+      #url .small { display: block; font-family: "Inter"; font-weight: 600; font-size: calc(50px * 0.62); color: rgba(255, 255, 255, 0.8); letter-spacing: 0.02em; margin-bottom: 10px; }
+      #url .big { display: block; font-family: "Montserrat"; font-weight: 700; font-size: 50px; letter-spacing: -0.01em; }
+      #next {
+        position: absolute; left: 0; right: 0; top: 930px; text-align: center; opacity: 0;
+        font-family: "Inter"; font-weight: 600; font-size: 34px; color: rgba(255, 255, 255, 0.78);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="22.0" data-width="1080" data-height="1080">
+      <div class="layer" id="bg"></div>
+
+      <video id="h8" class="clip full" src="assets/h8.mp4" muted playsinline data-start="0" data-duration="3.0" data-track-index="0"></video>
+      <div class="layer" id="shade"></div>
+
+      <div class="layer" id="phone-layer">
+        <div id="phone" data-layout-allow-overflow>
+          <div id="screen">
+
+            <video id="ui" class="clip" src="assets/ui.mp4" muted playsinline data-start="3.0" data-duration="11.5" data-track-index="1"></video>
+          </div>
+        </div>
+        <div class="caps" id="cap-ui">
+<div class="phrase" id="p2"><span class="w key">Park</span><span class="w">it.</span></div>
+<div class="phrase" id="p3"><span class="w key">Forget</span><span class="w">it.</span></div>
+<div class="phrase" id="p4"><span class="w">The</span><span class="w">app</span><span class="w">remembers</span><span class="w key">who.</span><span class="w">And</span><span class="w">for</span><span class="w">how</span><span class="w key">long.</span></div>
+<div class="phrase" id="p5"><span class="w">When</span><span class="w">it</span><span class="w">arrives,</span><span class="w">it's</span><span class="w key">back</span><span class="w">on</span><span class="w">your</span><span class="w">list.</span></div>
+        </div>
+      </div>
+
+      <div class="caps" id="cap-full">
+<div class="phrase" id="p1"><span class="w key">3</span><span class="w">people</span><span class="w">owe</span><span class="w">you</span><span class="w">an</span><span class="w">answer.</span><span class="w">Can</span><span class="w">you</span><span class="w">name</span><span class="w">all</span><span class="w key">three?</span></div>
+      </div>
+
+      <div class="layer" id="card">
+        <img id="logo" src="assets/logo.png" alt="" />
+        <div class="caps" id="cap-card">
+<div class="phrase" id="p6"><span class="w">A</span><span class="w">system</span><span class="w">you</span><span class="w">can</span><span class="w key">trust.</span></div>
+        </div>
+        <div id="url"><span class="small">Start free at</span><span class="big">whatsnextaction.com</span></div>
+        <div id="next">Next week: already out? Do what fits.</div>
+      </div>
+
+      <audio id="vo" src="assets/vo.wav" data-start="0" data-duration="22.0" data-track-index="2" data-volume="1"></audio>
+      <audio id="music" src="assets/music.wav" data-start="0" data-duration="22.0" data-track-index="3" data-volume="0.2"></audio>
+    </div>
+    <script>
+      const T = {"p2": {"s": [3.94, 4.18], "e": 5.8}, "p3": {"s": [6.1, 6.44], "e": 8.2}, "p4": {"s": [8.52, 8.67, 8.94, 9.4, 10.15, 10.42, 10.65, 10.87], "e": 11.4}, "p5": {"s": [11.64, 11.85, 11.97, 12.58, 12.87, 13.18, 13.33, 13.64], "e": 14.15}, "p1": {"s": [0.17, 0.41, 0.85, 1.07, 1.29, 1.37, 1.95, 2.18, 2.36, 2.66, 2.78], "e": 3.0}, "p6": {"s": [16.55, 16.7, 17.0, 17.2, 17.45], "e": 22.0}};
+      const tl = gsap.timeline({ paused: true });
+
+      tl.fromTo("#h8", { scale: 1.04 }, { scale: 1.10, duration: 3.0, ease: "none" }, 0);
+      tl.set("#shade", { opacity: 1 }, 0); tl.set("#shade", { opacity: 0 }, 3.0);
+      tl.fromTo("#phone-layer", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power1.out", immediateRender: false }, 2.9);
+      tl.fromTo("#card", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power1.out" }, 14.049999999999999);
+      tl.set("#phone-layer", { opacity: 0 }, 14.399999999999999);
+      tl.fromTo("#logo", { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "power2.out" }, 14.2);
+      tl.fromTo("#url", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 18.62);
+      tl.fromTo("#next", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 19.8);
+
+      // word-by-word captions: pop in on the voice, cut out at phrase end
+      Object.keys(T).forEach((id) => {
+        const els = document.querySelectorAll("#" + id + " .w");
+        T[id].s.forEach((t, i) => {
+          tl.fromTo(els[i], { opacity: 0, y: 36, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.16, ease: "back.out(2.2)" }, t);
+        });
+        if (T[id].e < 22.0) tl.set(els, { opacity: 0 }, T[id].e);
+      });
+
+      tl.set({}, {}, 22.0);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

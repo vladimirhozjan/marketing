@@ -5,7 +5,7 @@
 - Datum: 📝 pon 2. 11. 2026 (prvi delovni dan po koncu meseca); ⬜ potrditev
 - Ritem ✅ (Vladimir, 26. 10.): What's new je broadcast obstoječim uporabnikom, enkrat na mesec, samo večje stvari
 - Vsebina: izidi oktobra iz `~/Documents/wna_orchestration/roadmap.md` (FEAT-003, -050, -017, -051, -053, -055, -056, -059, -060, -061, -063, -064, -065, -066; dopolnjeno 2. 11.: FEAT-005, -068, -069, -070, -071/-078/-079, -072, -080); izpuščeno: interno (deploy, testi, admin, cene, logotip, popravki napak, offline sync API za native aplikacije), pristajalna stran, prazna stanja, uvodni ogled
-- Status: 📝 osnutek (Claude, 26. 10.; dopolnjen 2. 11. z izidi 27. 10.–1. 11.), ⬜ potrditev; ⬜ preveri, da so vse naštete funkcije na produkciji; žive liste na produkciji ✅ (Vladimir, 2. 11.); navodila za MCP: v mailu samo napotilo na Settings → AI Apps ✅ (Vladimir, 2. 11.)
+- Status: 📝 osnutek (Claude, 26. 10.; dopolnjen 2. 11. z izidi 27. 10.–1. 11.), ⬜ potrditev; ⬜ preveri, da so vse naštete funkcije na produkciji; žive liste na produkciji ✅ (Vladimir, 2. 11.); navodila za MCP: v mailu samo napotilo na Settings → AI Apps ✅ (Vladimir, 2. 11.) · ✅ **poslano pon 2. 11.** (Vladimir, iz admina, HTML spodaj)
 
 Pravila: brez pomišljajev, brez "GTD app", brez "AI-powered"; admin nima placeholderjev, zato "Hi," brez imena.
 

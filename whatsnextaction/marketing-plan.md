@@ -191,6 +191,17 @@ Product Hunt (ob native zagonu).
 - Predlog: tedenska tabela v md — ogledi po platformi → kliki na stran → registracije → aktivirani (prvi teden vnese stvari + Weekly Review) → Pro. UTM po platformi; vprašanje "kje si slišal za nas" ob registraciji, če ga še ni.
 - Pregled po revizijskih točkah iz pogl. 10.
 
+### Zbirna tabela po tednih (dan 3; posodobi Claude ob vsaki analitiki)
+| Video (objava) | TikTok | Instagram | YouTube | LinkedIn QF (prikazi) | Uporabniki WNA |
+|---|---|---|---|---|---|
+| It's out (9. 10.) | 254 | 7 | 56 | ni podatka | 22 |
+| #1 Capture (16. 10.) | 232 | 40 | 65 | ni podatka (do 25. 10.: 77) | 24 |
+| #2 Clarify (23. 10.) | 272 | 160 | 71 | 31 | 24 |
+| #3 Next + Today (30. 10.) | 786 | 45 | 7 | 22 | 24 |
+| #4 Waiting For (6./7. 11.) | 800 | 43 | 19 | 27 | 24 |
+
+Povprečen ogled na TikToku: 6,6 s → 1,8 s → 1,5 s → 1,6 s → 1,4 s. #4: TikTok, IG in YouTube objavljeni sob 7. 11., prebrano na dan 2.
+
 ### Zagon "It's out": dan 1 (pet 9. 10. 2026, ~8 h po objavi; prebrano prek Claude in Chrome)
 | Kanal | Metrika | Vrednost |
 |---|---|---|
@@ -247,3 +258,34 @@ Za primerjavo: personal #1 (15. 9.) 1.497 prikazov, 49 reakcij, 12 komentarjev.
 - **YouTube padel:** povp. 0:08 namesto 0:53; Capture so vrteli večkrat, Clarify ne. 71 ogledov skoraj vseh v prvih urah, potem 1 v 48 h: YouTube ga ni potisnil naprej.
 - **LinkedIn QubForge** ostaja brez dosega (stran 21 sledilcev); podnapisi se vklopijo pri vsakem videu sami.
 - **Registracije: 0 novih od 19. 10.** (24 uporabnikov). ~500 ogledov Clarify ni prineslo nobenega uporabnika; od zagona 9. 10. sta prišla samo 2. Brez UTM in "kje si slišal za nas" ne vemo, ali gledalci sploh pridejo na stran.
+
+### Video #3 Next Actions + Today: dan 3 (pon 2. 11. 2026, ~3 dni po objavi pet 30. 10. po 18:00; prebrano prek Claude in Chrome)
+| Kanal | Metrika | #3 dan 3 | Clarify dan 3 |
+|---|---|---|---|
+| TikTok (hook: roka s telefonom + POV napis) | ogledi / skupni čas / povp. čas / do konca | **786** / 21 min 02 s / **1,6 s** / 0,3 % · 3 všečki, 0 komentarjev, 1 deljenje, 0 shranjenih (vrstni red ikon v Studiu) · **+1 sledilec** · For You 97,9 %, profil 1,5 % · večina odide pri **0:01** | 272 / 6 min 32 s / 1,45 s / 0,7 % |
+| YouTube Short (hook: H7 3D) | ogledi / naročniki / zadnjih 48 h | **7** / — / 0 · ohranjanje: premalo podatkov | 71 / 11,8 % / 0:08 |
+| Instagram Reel (hook: H7 3D) | ogledi / gledalci / interakcije | **45** / 21 (80 % nesledilci) / 4 všečki, 0 komentarjev, shranjenih, deljenj · povp. čas **0:01** · obiski profila 0, sledilci 0 | 160 / 113 / 2 všečka |
+| LinkedIn QubForge (1:1) | prikazi / ogledi / kliki / reakcije | **22 / 5 / 2 / 1** · Clarify zdaj 44 / 10 / 3 / 1 · stran 2. 10.–31. 10.: 229 prikazov, 8 reakcij, 1 repost | 31 / 4 / 3 / 1 |
+| Admin WNA | uporabniki / registracije ta teden / DAU | **24** (od 19. 10. **+0**) / 0 (pon, teden od ponedeljka) / 1 · opravljeno ta teden 1 · stuff 131, akcije 685, projekti 42 · Inbox povp. 4,4 · uporabnikov s podatki 16 · sistem zdrav, verzija 1.2.71 · broadcast What's new poslan 2. 11. ob 9:41 | 24 / 0 / 0 |
+
+**Ugotovitve (📝 Claude):**
+- **TikTok skoraj 3× več ogledov** (272 → 786): domač začetek (roka s telefonom, POV napis) TikTok potisne dlje. Ljudje pa še vedno odidejo pri 0:01 (povp. 1,6 s), zato je doseg prišel iz algoritma, ne iz gledanja do konca.
+- **Instagram je padel** (160 → 45): H7 3D hook ni deloval, povp. čas 0:01. Rast pri Clarify ni bila trend.
+- **YouTube ga ni pokazal** (7 ogledov, 0 v 48 h): tretji video zapored z upadom (65 → 71 → 7).
+- **LinkedIn QubForge** stoji (22 prikazov); stran ima v oktobru 229 prikazov skupaj.
+- **Registracije: 0 novih od 19. 10.** (24 uporabnikov), ~840 ogledov #3 ni prineslo nobenega uporabnika. Problem ostaja isti: prva sekunda in pot od videa do registracije (UTM, "kje si slišal za nas", `/start`).
+
+
+### Video #4 Waiting For: dan 3 (pon 9. 11. 2026; LinkedIn objavljen pet 6. 11. = dan 3, IG, TikTok, Shorts sob 7. 11. = **dan 2**; prebrano prek Claude in Chrome)
+| Kanal | Metrika | #4 dan 3 | #3 dan 3 |
+|---|---|---|---|
+| LinkedIn QubForge (1:1) | prikazi / ogledi / kliki / reakcije / ER | **27 / 10 / 0 / 1** / 3,7 % · #3 zdaj 32 / 10 / 2 / 1 · stran 9. 10.–7. 11.: 268 prikazov, 9 reakcij, 0 komentarjev, 1 repost | 22 / 5 / 2 / 1 |
+| TikTok (hook: "Three people") | ogledi / skupni čas / povp. čas / do konca | **800** / 18 min 43 s / **1,4 s** / 0,3 % · 2 všečka, 0 komentarjev, deljenj, shranjenih, sledilcev · For You 99,9 % · večina odide pri **0:01** | 786 / 21 min 02 s / 1,6 s / 0,3 % |
+| YouTube Short | ogledi / naročniki / zadnjih 48 h | **19** / — / 0 · ohranjanje: premalo podatkov | 7 / — / 0 |
+| Instagram Reel | ogledi / gledalci / interakcije | **43** / 18 (65,1 % nesledilci) / 2 všečka, 0 komentarjev, shranjenih, deljenj · povp. čas 0:02 · obiski profila 0, sledilci 0 | 45 / 21 / 4 všečki |
+| Admin WNA | uporabniki / registracije ta teden / DAU | **24** (od 19. 10. **+0**) / 0 (pon, teden od ponedeljka) / 1 · opravljeno ta teden 3 · stuff 57, akcije 726, projekti 43 · Inbox povp. 5 · uporabnikov s podatki 16 · sistem zdrav, verzija 1.2.77 | 24 / 0 / 1 |
+
+**Ugotovitve (📝 Claude):**
+- **Vzorec se ponavlja četrti teden:** TikTok ~800 ogledov iz algoritma, odhod pri 0:01; IG ~45; YouTube skoraj nič; LinkedIn QF ~30 prikazov.
+- **Hook "Three people" ni premaknil prve sekunde** (1,4 s proti 1,6 s pri #3). Vprašanje kot napis gledalca ne ustavi.
+- **Registracije: 0 novih od 19. 10.** (3 tedne, ~3.000 ogledov skupaj). Videi prinašajo doseg na TikToku, ne pa ljudi v aplikacijo.

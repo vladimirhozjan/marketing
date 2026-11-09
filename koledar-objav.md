@@ -37,11 +37,11 @@ Zagon se je premaknil s pon 28. 9. na **pet 9. 10.** (✅ Vladimir, 8. 10.: najp
 
 | Datum | Tok | Objava | Kanal | Opombe |
 |---|---|---|---|---|
-| **pon 2. 11.** 📝 | whatsnextaction | **What's new: oktober** (mesečni broadcast ✅ Vladimir, 26. 10.; vsebuje Calendar Sync, Google Drive in ostale večje izide oktobra) | e-pošta obstoječim uporabnikom | `whatsnextaction/objave/2026-11-02-mail-whats-new-oktober.md`; ⬜ potrditev |
-| **pet 6. 11.** | whatsnextaction | **#4 Waiting For** — "Waiting on someone? Park it. Forget it. The app remembers." Sporočilo 3, *…a system you can trust.* | LinkedIn, IG (A) | |
+| **pon 2. 11.** ✅ | whatsnextaction | **What's new: oktober** (mesečni broadcast ✅ Vladimir, 26. 10.; vsebuje Calendar Sync, Google Drive in ostale večje izide oktobra) | e-pošta obstoječim uporabnikom | `whatsnextaction/objave/2026-11-02-mail-whats-new-oktober.md`; ✅ poslano pon 2. 11. |
+| **pet 6. 11.** | whatsnextaction | **#4 Waiting For** — "Waiting on someone? Park it. Forget it. The app remembers." Sporočilo 3, *…a system you can trust.* | LinkedIn, IG (A); + TikTok, Shorts ✅ 6. 11. | scenarij 📝 `whatsnextaction/objave/2026-11-06-video-waiting-for.md`; ✅ potrjen pon 2. 11. (hook "Three people"); video ✅ potrjen čet 5. 11. (`wna-waiting-for-9x16.mp4`, `-1x1.mp4`); LinkedIn QF ✅ objavljeno pet 6. 11. (https://www.linkedin.com/posts/qubforge_park-it-forget-it-activity-7524374444711157760-qavR); Shorts ✅ (https://youtube.com/shorts/LzATV1bxRXU) in TikTok ✅ (https://www.tiktok.com/@whatsnextaction/video/7705333168898854166) sob 7. 11.; IG ✅ sob 7. 11. (https://www.instagram.com/p/DfbrcM6KDKU/) |
 | pon/tor 9.–10. 11. | whatsnextaction | What's new (če izid) | LinkedIn QF, IG, mail | |
-| **tor 10. 11. 8:30** | qubforge | **#2 First month** — mejniki WNA + kako delamo | LinkedIn stran | deli zadnji What's new; osnutek tor 3. 11. |
-| **pet 13. 11.** | whatsnextaction | **#5 Context tags** — "@errands: what can you do while you're already in town?" Sporočilo 2 | TikTok, Shorts, IG (B) | globalni kontekst filter |
+| **tor 10. 11. 8:30** | qubforge | **#2 First month** — mejniki WNA + kako delamo | LinkedIn stran | deli zadnji What's new; ✅ besedilo potrjeno čet 5. 11. `qubforge/objave/2026-11-10-objava-linkedin.md`, brez slike ✅ |
+| **pet 13. 11.** | whatsnextaction | **#5 Context tags** — "@errands: what can you do while you're already in town?" Sporočilo 2 | TikTok, Shorts, IG (B) | globalni kontekst filter; 📝 scenarij 9. 11.: @computer → @home, hook "Why is 'take out the trash' on your list at work?" `whatsnextaction/objave/2026-11-13-video-context-tags.md` |
 | pon/tor 16.–17. 11. | whatsnextaction | What's new (če izid) | LinkedIn QF, IG, mail | |
 | **pet 20. 11.** | whatsnextaction | **#6 Weekly Review** — "Friday. Fifteen minutes. Nothing falls through." Sporočilo 3, *…a system you can trust.* | LinkedIn, IG (A) | |
 | pon/tor 23.–24. 11. | whatsnextaction | What's new (če izid) | LinkedIn QF, IG, mail | |
