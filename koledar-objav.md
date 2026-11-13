@@ -41,7 +41,7 @@ Zagon se je premaknil s pon 28. 9. na **pet 9. 10.** (✅ Vladimir, 8. 10.: najp
 | **pet 6. 11.** | whatsnextaction | **#4 Waiting For** — "Waiting on someone? Park it. Forget it. The app remembers." Sporočilo 3, *…a system you can trust.* | LinkedIn, IG (A); + TikTok, Shorts ✅ 6. 11. | scenarij 📝 `whatsnextaction/objave/2026-11-06-video-waiting-for.md`; ✅ potrjen pon 2. 11. (hook "Three people"); video ✅ potrjen čet 5. 11. (`wna-waiting-for-9x16.mp4`, `-1x1.mp4`); LinkedIn QF ✅ objavljeno pet 6. 11. (https://www.linkedin.com/posts/qubforge_park-it-forget-it-activity-7524374444711157760-qavR); Shorts ✅ (https://youtube.com/shorts/LzATV1bxRXU) in TikTok ✅ (https://www.tiktok.com/@whatsnextaction/video/7705333168898854166) sob 7. 11.; IG ✅ sob 7. 11. (https://www.instagram.com/p/DfbrcM6KDKU/) |
 | pon/tor 9.–10. 11. | whatsnextaction | What's new (če izid) | LinkedIn QF, IG, mail | |
 | **tor 10. 11. 8:30** | qubforge | **#2 First month** — mejniki WNA + kako delamo | LinkedIn stran | deli zadnji What's new; ✅ besedilo potrjeno čet 5. 11. `qubforge/objave/2026-11-10-objava-linkedin.md`, brez slike ✅ |
-| **pet 13. 11.** | whatsnextaction | **#5 Context tags** — "@errands: what can you do while you're already in town?" Sporočilo 2 | TikTok, Shorts, IG (B) | globalni kontekst filter; 📝 scenarij 9. 11.: @computer → @home, hook "Why is 'take out the trash' on your list at work?" `whatsnextaction/objave/2026-11-13-video-context-tags.md` |
+| **pet 13. 11.** | whatsnextaction | **#5 Context tags** — "@errands: what can you do while you're already in town?" Sporočilo 2 | TikTok, Shorts, IG (B) + LinkedIn QF ✅ objavljeno | globalni kontekst filter; scenarij 9. 11.: @computer → @home, hook "Why is 'take out the trash' on your list at work?" `whatsnextaction/objave/2026-11-13-video-context-tags.md` |
 | pon/tor 16.–17. 11. | whatsnextaction | What's new (če izid) | LinkedIn QF, IG, mail | |
 | **pet 20. 11.** | whatsnextaction | **#6 Weekly Review** — "Friday. Fifteen minutes. Nothing falls through." Sporočilo 3, *…a system you can trust.* | LinkedIn, IG (A) | |
 | pon/tor 23.–24. 11. | whatsnextaction | What's new (če izid) | LinkedIn QF, IG, mail | |
@@ -75,7 +75,7 @@ Zagon se je premaknil s pon 28. 9. na **pet 9. 10.** (✅ Vladimir, 8. 10.: najp
 | Dogodek | Kdaj | Kaj se zgodi |
 |---|---|---|
 | **Native aplikacije (iOS/Android)** | nov–dec, ko je datum znan | tisti petek video zamenja **"Now in the App Store / Play Store"** (vse štiri); QubForge objava istega tedna; beta uporabnike prosiš za ocene v trgovinah; link v biu → trgovina |
-| **Product Hunt** | ob native zagonu; če pade v december → **tor 5. 1. ali tor 12. 1. 2027** | priprava 2 tedna prej: tagline, 5 slik, prvi komentar ustanovitelja, beta uporabniki obveščeni |
+| **Product Hunt** | ✅ **tor 5. 1. 2027** (Vladimir, 13. 11.); letni Pro −50 % 5.–12. 1. | priprava 2 tedna prej: tagline, 5 slik, prvi komentar ustanovitelja, beta uporabniki obveščeni |
 | **Revizija po januarskem vrhu** | konec februarja 2027 | postavitev KPI na pravih številkah |
 
 ## Kaj mora biti pripravljeno kdaj (Claude → Vladimir)

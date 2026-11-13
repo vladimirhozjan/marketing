@@ -36,7 +36,7 @@ LinkedIn stran QubForge (Vladimir deli objave s svojega profila). Spletna stran 
 |---|---|---|---|
 | 1 | pet 9. 10. | QubForge launches WhatsNextAction | ✅ objavljeno |
 | – | od 16. 10. | WNA tedenski videi na strani (Capture 16. 10.) in What's new | ✅ teče |
-| 2 | tor 10. 11. | First month (mejniki WNA, kako delamo) | 📝 |
+| 2 | tor 10. 11. | First month (mejniki WNA, kako delamo) | ✅ objavljeno |
 | 3 | tor 8. 12. | How we build (ali napoved native aplikacij) | 📝 |
 | 4 | tor 5. 1. 2027 | 2026 in one post | 📝 |
 
@@ -48,3 +48,13 @@ LinkedIn stran QubForge (Vladimir deli objave s svojega profila). Spletna stran 
 | Poziv | nobenega / "spremljaj QubForge" | vedno: "try it free" + link |
 
 ## 6. Merjenje ⬜
+
+### Analitika objav (LinkedIn admin, Content engagement)
+| Objava | Dan | Prikazi | Kliki (CTR) | Reakcije | Reposti | Angažiranost |
+|---|---|---|---|---|---|---|
+| #2 First month (tor 10. 11., povezava brez slike) | 3 (pet 13. 11.) | 51 | 2 (3,9 %) | 1 | 1 (Vladimir) | 7,8 % |
+
+Primerjava v istem obdobju (WNA videi na strani): #3 Next + Today 36 prikazov · #4 Waiting For 47 · #5 Context tags 20 (dan 0). Stran skupaj 13. 10.–11. 11.: 286 prikazov (+522 %), 7 reakcij, 1 repost.
+- 📝 #2 je doslej najbolj videna objava strani in edina s kliki na povezavo, a v absolutnih številkah majhna (51); doseg nosi Vladimirjev repost.
+- ⚠ Predogled povezave kaže naslov strani "WhatsNextAction — GTD App for Getting Things Done" (OG naslov whatsnextaction.com). To je v nasprotju s pravilom "brez GTD app kot ime produkta" in ima pomišljaj. ✅ popravljeno v `wna_web/main/src/main-app/router/router.js` (Claude, 13. 11., na Vladimirjevo zahtevo): "WhatsNextAction | Know your next action, built around GTD"; necommitano, velja po buildu in deployu.
+

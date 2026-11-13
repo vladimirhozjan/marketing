@@ -1,10 +1,39 @@
-# Checklista (stanje: ponedeljek 9. 11. 2026)
+# Checklista (stanje: petek 13. 11. 2026)
+
+## Danes, pet 13. 11.
+- [x] Reset demo (Claude): Inbox 8, canvas Ana prazen, ostanki #4 in testne akcije v koš; ⚠ "Pull the Q4 numbers" in "Choose tiles" ostala v Today (MCP ju ne premakne)
+- [x] Landing hero A in B posneta (Vladimir)
+- [x] Landing hero v2 zložen (Claude): `whatsnextaction/video/landing-hero/v2/landing-hero.mp4`, 19,9 s, 0,8 MB
+- [x] Landing hero v2 ✅ (Vladimir, 13. 11.), kopiran v `wna_web/main/src/main-app/assets/landing/` (Claude); necommitano v wna_web
+- [x] #5 demo račun (Claude): Next Actions 39 akcij, @computer 6, @home 4, "Take out the trash" 4. vrstica; vse z oznako
+- [x] #5 UI posnetki v PWA (Vladimir, 11:50–11:53)
+- [x] #5 montaža (Claude): `whatsnextaction/video/wna-context-tags-9x16.mp4` (TikTok, Shorts, IG) in `wna-context-tags-1x1.mp4` (LinkedIn QF ✅ dodan, Vladimir 13. 11.), 19,5 s, −14 LUFS; naslovnica in sličica; LinkedIn besedilo 📝 v scenariju
+- [x] #5 pregled ✅ in objava na vseh štirih (Vladimir, pet 13. 11.): YT https://youtube.com/shorts/9D8YOXlAYTU · TikTok https://www.tiktok.com/@whatsnextaction/video/7707610783668063510 · LinkedIn QF https://www.linkedin.com/posts/qubforge_why-is-take-out-the-trash-on-your-list-activity-7526962762170826753-mSkj · IG https://www.instagram.com/p/Dfrf2m9KOWp/
+- [x] App Store ime ✅ (Vladimir, 13. 11.): Name **WhatsNextAction App** ("WhatsNextAction" zaseden, "– GTD & AI" opuščen zaradi znamke GTD), Subtitle **Know your next action, with AI** (30/30); "gtd" samo v Keywords
+- [x] Plan registrov in skupin 📝 (Claude): `whatsnextaction/registri-in-skupine.md`, izvedba pon 16. 11.
+- [x] Plan rasti do novega leta (Claude): `whatsnextaction/plan-rasti-do-novega-leta.md`; ✅ odločitve D1–D8 (Vladimir, 13. 11.): cilji 150/40/5/300, 14 dni Pro (splet in iOS), personal članek začetek dec, PH −50 % letni, ena splošna primerjalna stran, video brez 3D + Claude, mreže ne nagovarjamo; Android v Play Store do konca nov
+- [x] Prompt za arhitekta (9 razvojnih postavk: merjenje, Empty your head, 14 dni Pro, nadgradnja, maili, priporočila, MCP title, ocene, PH kupon) predan; razvoj zagnan pet 13. 11. (Vladimir); ✅ zdaj samo FEAT-137 merjenje in 138 `title` orodij, nato Android; 139–145 (preizkus, Empty your head, nadgradnja, maili, priporočila, ocene, PH ponudba) šele po 10. 12. Posledice vpisane v plan rasti (V1, V2, V5, V6, cilji, časovnica)
+- [ ] ⬜ App Store / Play besedila ob zagonu brez "14 days of Pro" (preizkusa še ni); dodamo po FEAT-139
+- [x] Besedila za razvoj ✅ (Vladimir, 13. 11.): `whatsnextaction/besedila-rast.md`; brez ankete, Empty your head v obstoječem touru, 4 maili od "Vladimir from WhatsNextAction", mehak ton
+- [ ] Pon 16. 11.: analitika #5 dan 3 (Claude); stare oznake v Context filter (bauhaus, computer, home) ⬜
+- [x] Analitika QF #2 dan 3 (Claude) → `qubforge/marketing-plan.md` pogl. 6: 51 prikazov, 2 klika (3,9 %), 1 reakcija, 1 repost, angažiranost 7,8 %
+
+## Danes, čet 12. 11.
+- [x] Vse današnje prestavljeno na **pet 13. 11. zjutraj** (Vladimir se slabo počuti): reset demo + snemanje landinga → demo račun #5 → UI posnetki #5 → montaža → pregled → objava pet 17:00–18:00
+
+## Danes, tor 10. 11.
+- [x] QubForge #2 "First month" objavljen na LinkedIn strani (Vladimir): https://www.linkedin.com/posts/qubforge_whatsnextaction-gtd-app-for-getting-things-activity-7525872979239636993-aaV8
+- [x] QF #2 deljen s profila kot repost brez stavka (Vladimir)
+- [x] WNA prod: task "#2 First month: objava" zaključen; naslednji v QubForge marketing #3 How we build (potrdi osnutek, rok 3. 12.)
+- [x] Analitika QF #2 dan 3 → pet 13. 11. (Claude)
 
 ## Danes, pon 9. 11.
 - [x] Brainstorm #5 Context tags → scenarij 📝 (Claude): `whatsnextaction/objave/2026-11-13-video-context-tags.md`; @computer → @home, hook "take out the trash", brez 3D (⬜)
-- [ ] **Sre 11. 11. zjutraj** ✅ (Vladimir): najprej landing, nato #5. Landing hero AI asistent: ponovno snemanje (Vladimir, 9. 11.: izboljšana izkušnja, stvari se pojavljajo in izginjajo); pred snemanjem "reset demo" (Claude), `whatsnextaction/objave/landing-hero-ai.md`
+- [ ] **Pet 13. 11. zjutraj** ✅ (Vladimir; sre 11. 11. martinovo, čet 12. 11. bolan): najprej landing, nato #5. Landing hero AI asistent: ponovno snemanje (Vladimir, 9. 11.: izboljšana izkušnja, stvari se pojavljajo in izginjajo); pred snemanjem "reset demo" (Claude), `whatsnextaction/objave/landing-hero-ai.md`
 - [x] Scenarij #5 ✅ potrjen, brez 3D (Vladimir, 9. 11.)
-- [ ] #5 Julian, glasba, predloga brez UI (Claude); demo račun za #5 pripravim sre 11. 11. takoj po snemanju landinga (isti demo račun)
+- [x] #5 Julian (5 stavkov + R1–R3, Whisper ✅) in glasba (sprostitev na @home 8,6 s) (Claude): `whatsnextaction/video/context-tags/`
+- [x] #5 predloga brez UI (Claude): `whatsnextaction/video/wna-context-tags/`, check ✅, poskusni render 19,5 s, −14 LUFS
+- [ ] #5 demo račun pripravim pet 13. 11. takoj po snemanju landinga (isti demo račun)
 - [x] QF #2: funkcije ponovno preštete (Claude): od 5. 11. samo iPhone aplikacija (še ni javna), ostane 33
 - [x] Analitika #4 (Claude) → `whatsnextaction/marketing-plan.md` pogl. 11: LinkedIn QF 27 prikazov (dan 3) · TikTok 800 (1,4 s) · IG 43 · YT 19 (dan 2) · admin 24 uporabnikov, +0 od 19. 10.
 

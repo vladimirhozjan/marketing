@@ -1,11 +1,12 @@
 # WNA · Video #5 Context tags
 
-- Kanal: persona B (koledar) → **TikTok**, **YouTube Shorts**, **Instagram Reels** (vse 9:16); brez LinkedIna.
+- Kanal: persona B (koledar) → **TikTok**, **YouTube Shorts**, **Instagram Reels** (vse 9:16); ✅ pet 13. 11. (Vladimir) dodan še **LinkedIn QubForge (1:1)**.
 - Datum: **pet 13. 11. 2026**, 17:00–18:00 (ritem ✅ 23. 10.).
-- Cikel: pon 9. 11. scenarij (jaz) → **tor 10. 11. potrditev (ti)** → tor Julian, glasba, predloga brez UI, demo račun (jaz) → **sre 11. 11. UI posnetki (ti)**, montaža isti dan (jaz) → čet 12. 11. pregled (ti) → pet 13. 11. objava (ti).
+- Cikel: pon 9. 11. scenarij (jaz) → **tor 10. 11. potrditev (ti)** → tor Julian, glasba, predloga brez UI, demo račun (jaz) → **pet 13. 11. zjutraj UI posnetki (ti)** ✅ (Vladimir: sre 11. 11. martinovo, čet 12. 11. bolan), takoj po landingu; montaža takoj (jaz) → pet dopoldne pregled (ti) → pet 13. 11. objava (ti).
 - Vizual: 📝 pravi UI od kadra 0 (kaotičen seznam Next Actions), nato filter po kontekstu dvakrat: @computer → @home; zaključna kartica. Brez 3D prizora (glej ⬜ 3 spodaj).
 - Sporočilo: 2 "vsaka stvar ima naslednji korak" → tagline *Know your next action.*
 - Dolžina: 📝 okoli 20 s (naracija ~13 s)
+- Objavljeno ✅ pet 13. 11. (Vladimir): YT https://youtube.com/shorts/9D8YOXlAYTU · TikTok https://www.tiktok.com/@whatsnextaction/video/7707610783668063510 · LinkedIn QF https://www.linkedin.com/posts/qubforge_why-is-take-out-the-trash-on-your-list-activity-7526962762170826753-mSkj · IG https://www.instagram.com/p/Dfrf2m9KOWp/
 - Status: ✅ scenarij potrjen (Vladimir, pon 9. 11.), brez 3D ✅; demo račun ✅ pripravim tik pred snemanjem UI (Vladimir, 9. 11.)
 
 Pravila: brez "GTD" v govoru; brez "AI-powered"; brez pomišljajev; vsak stavek naracije ima napis na zaslonu; oznaka AI ✅ samo Instagram; samodejni podnapisi nikjer; brez primerjave z drugimi aplikacijami. Mirna verzija UI ✅ (od Clarify): brez tipk, bliskov in približkov, UI 1,5–2×, rezi samo na mirujočih zaslonih.
@@ -29,7 +30,7 @@ Kartica #4 je napovedala *"Next week: already out? Do what fits."* Napoved je mi
 - [x] 1. ✅ Scenarij kot celota (Vladimir, 9. 11.).
 - [ ] 2. Hook 📝 *"Why is 'take out the trash' on your list at work?"* ali R1 *"At work. And your list says: take out the trash."*
 - [x] 3. ✅ Brez 3D prizora (Vladimir, 9. 11.). 📝 Predlog: da. Hook je konkretna stvar na seznamu, zato jo mora pokazati pravi UI od kadra 0. #2 (pravi UI od kadra 0) in #4 (3D) imata na TikToku enako prvo sekundo (1,45 s proti 1,4 s), torej 3D ne pomaga, stane pa ~19 kreditov in dan dela. Če želiš 3D: H9 ista oseba za pisalno mizo gleda v telefon, začudeno dvigne obrv (0–2,5 s), nato UI.
-- [ ] 4. Glasba: 📝 ista "One Last Click", sprostitev na trenutek, ko se seznam skrči na @home.
+- [x] 4. Glasba ✅ narejena (pon 9. 11., glej spodaj).
 - [ ] 5. Napoved na kartici: 📝 *Next week: 15 minutes that keep it all true.* (#6 Weekly Review, pet 20. 11.)
 
 **Demo račun: tik pred snemanjem UI ✅ (Vladimir, 9. 11.; naredim jaz prek MCP `wna-demo`)**
@@ -43,7 +44,7 @@ Kartica #4 je napovedala *"Next week: already out? Do what fits."* Napoved je mi
 - Obstoječe stvari iz #3/#4 v Next Actions dobijo @errands ali @phone ali gredo v Someday, da števila 6 in 4 držijo.
 - ⬜ preverim v aplikaciji: kje je globalni kontekst na telefonu (na računalniku je na vrhu stranske vrstice, spec 18.4) in kako se vidi aktivni čip.
 
-**Sre 11. 11.: UI posnetki** v `whatsnextaction/video/raw/` (navodila spodaj)
+**Čet 12. 11. zjutraj: UI posnetki** (po landingu) v `whatsnextaction/video/raw/` (navodila spodaj)
 - [ ] 6. `ctx-01-list`, `ctx-02-computer`, `ctx-03-home`
 
 **Pet 13. 11. (objavljaš ti)**
@@ -86,6 +87,26 @@ Ocena po Julianovem tempu (izmerjeno na #1–#4; Julian "whatsnextaction.com" iz
 - R2 "Same list. Only what fits." (namesto 2, bližje napovedi s kartice #4)
 - R3 "Your list, where you are." (namesto 5 pred taglinom, če kartica potrebuje več)
 
+## Julian ✅ narejen (pon 9. 11.)
+
+`video/context-tags/julian/` (mp3 + wav 48 kHz), vsi dobesedno potrjeni z Whisper (large-v3-turbo). Dolžine: j1 2,64 · j2 1,20 · j3 2,48 · j4 3,36 · j5 5,04 s = 14,7 s govora (ocena 14,0). Rezerve r1 3,28 · r2 2,24 · r3 1,76 s. Job ID (Higgsfield): 1770dfb1, b8d7187b, e5eb1d7a, 37d20869, d6474330 · r 4d0749f5, 5b4e3cec, 2c29ab93.
+
+📝 Odmiki v videu: j1 0,05 · j2 3,30 · j3 5,30 · j4 8,60 · j5 12,60 (konča 17,6) → **video 19,5 s**: UI 0–12,2 (ctx-01 0–3,2 · ctx-02 3,2–8,4 · ctx-03 8,4–12,2) · kartica 12,2–19,5.
+
+## Glasba ✅ narejena (pon 9. 11.)
+
+`video/context-tags/music.wav`: "One Last Click" od 18,95 s, 19,5 s, pojemanje 18,0–19,5. Sprostitev pesmi (27,55 s) pade na **8,6 s, preklop na @home**, ko se pojavijo smeti.
+
+## Predloga ✅ narejena (pon 9. 11.), brez UI
+
+`video/wna-context-tags/` (samo 9:16; TikTok, Shorts, IG), `build.py` po vzoru #4, brez 3D: telefon viden od kadra 0. `hyperframes check` brez napak. Poskusni render `renders/test-noui.mp4`: 19,5 s, −14,0 LUFS; napisi beseda za besedo (ključne besede teal: *trash*, *work*, *where*, *desk*, *home*, *time*, *next action*), kartica od 12,2 s, URL 14,66 s, napoved 16,2 s. Namesto UI siv nadomestek z imenom posnetka. V čet 12. 11. po posnetkih napišem `cut_ui.py` in zamenjam nadomestek.
+
+## Montaža ✅ narejena (pet 13. 11.)
+
+- `whatsnextaction/video/wna-context-tags-9x16.mp4` (TikTok, Shorts, IG) in `wna-context-tags-1x1.mp4` (LinkedIn QF), 19,5 s, −14 LUFS. Naslovnica `wna-context-tags-cover-9x16.jpg`, sličica `wna-context-tags-thumbnail-1x1.jpg` (kader @home, 10,8 s).
+- Posneto v PWA na iPhonu (✅ Vladimir, 13. 11.: native še ni javen). Kontekst se izbere v meniju → list "Context filter". UI rez: `video/wna-context-tags/cut_ui.py`, pretopi 0,3 s pri 3,2 / 5,3 / 7,9 / 8,7; tap na @home pade na 8,63 (sprostitev glasbe 8,6).
+- ⚠ V listu "Context filter" so vidne stare oznake demo računa (bauhaus, computer, home).
+
 ## Snemanje UI (navodila za Vladimirja)
 
 Nastavitve kot pri #1–#4: iPhone, snemanje zaslona iz Nadzornega centra, pokončno, mikrofon izklopljen, Do Not Disturb, svetla tema, English, demo račun. 1 s mirovanja na začetku in koncu vsakega posnetka. Tapaj mirno, med koraki pol sekunde premora; pospešim v montaži. Globalni kontekst mora biti pred začetkom **izklopljen**.
@@ -105,7 +126,24 @@ Nastavitve kot pri #1–#4: iPhone, snemanje zaslona iz Nadzornega centra, pokon
 
 ## Objave po platformah (pet 13. 11., 17:00–18:00, objavljaš ti) 📝
 
-Vrstni red: TikTok → YouTube Shorts → Instagram Reels.
+Vrstni red: TikTok → YouTube Shorts → Instagram Reels → LinkedIn QubForge.
+
+### 0 · LinkedIn QubForge (1:1) ✅ objavljeno pet 13. 11.
+- Besedilo:
+```
+Why is "take out the trash" on your list at work?
+
+One long list shows you everything, everywhere. At your desk, half of it is stuff you cannot do there, and every glance at it costs a little focus.
+
+In WhatsNextAction you tell it where you are. At your desk you see only what you can do there. At home, the trash is back. Right on time.
+
+Know your next action.
+
+Start free: https://whatsnextaction.com
+
+#WhatsNextAction #productivity #focus
+```
+- Nastavitve: video `wna-context-tags-1x1.mp4` · sličica `wna-context-tags-thumbnail-1x1.jpg` (kader @home) · samodejni podnapisi izklopi ob nalaganju · naslov videa "Tell it where you are." · LinkedIn nima oznake AI.
 
 ### 1 · TikTok (9:16)
 - Opis:

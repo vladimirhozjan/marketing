@@ -102,6 +102,8 @@ Ker ciljamo novince, **glavni konkurent ni aplikacija, ampak "nič"**: glava, Ap
 **Ne trdimo**, da smo "boljši od Todoista"; konkurentov v videih ne omenjamo po imenu.
 
 ## 5. Cilji (KPI) ⬜
+
+📝 Predlog ciljev in vzvodov do 10. 1. 2027: `plan-rasti-do-novega-leta.md` (13. 11.).
 Ni definirano. 📝 Predlog Claude: pravi KPI se postavijo po januarskem vrhu (konec februarja 2027) na podlagi resničnih številk; do takrat vodilni kazalniki iz pogl. 11. Za leto 1 je pravi cilj aktivacija novincev (prvi teden vnese stvari, naredi Weekly Review), ne prihodek.
 
 ## 6. Kanali in taktike ✅
@@ -127,7 +129,7 @@ Product Hunt (ob native zagonu).
 
 **Izpuščeno namenoma:** X, Reddit, Facebook skupine, Threads, Bluesky, Pinterest, Snapchat.
 
-**Novoletni val ✅ smer (Vladimir, 26. 10.):** do decembra gradiva kanale in zalogo vsebin (petkovi videi); nato ciljano v productivity skupine po raznih medijih **pred novim letom in takoj po** (novoletne zaobljube). To odpira Reddit in skupine, ki sta zgoraj izpuščena: ⬜ katere skupine in mediji ter pravila sodelovanja, odločitev pri reviziji 7. 12. 📝 Do takrat naj bodo UTM in "kje si slišal za nas" urejeni, da bo val merljiv.
+**Novoletni val ✅ smer (Vladimir, 26. 10.):** do decembra gradiva kanale in zalogo vsebin (petkovi videi); nato ciljano v productivity skupine po raznih medijih **pred novim letom in takoj po** (novoletne zaobljube). To odpira Reddit in skupine, ki sta zgoraj izpuščena: ⬜ katere skupine in mediji ter pravila sodelovanja, odločitev pri reviziji 7. 12. 📝 Do takrat naj bodo UTM in "kje si slišal za nas" urejeni, da bo val merljiv. 📝 Plan registrov (Claude, ChatGPT, MCP) in skupin s koraki: `registri-in-skupine.md` (13. 11., ⬜ potrditev).
 
 ### SEO in mreža (prvo leto) 📝 (Claude, 26. 10.; ⬜ odločitev pri reviziji 7. 12.)
 ✅ Cilj (Vladimir, 26. 10.): prvo leto je gradnja mreže in višje mesto na Googlu; cena in ponudbe pridejo na vrsto, ko bo vidnost.

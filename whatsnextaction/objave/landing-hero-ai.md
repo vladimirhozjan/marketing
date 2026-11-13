@@ -7,7 +7,7 @@
 - Snemanje: **prod**, račun `demo@whatsnextaction.com` (Pro, 10.000 kreditov ≈ 110 zahtev), **desktop**:
   asistent je zasidran desno, seznam levo se osvežuje sam (FEAT-080), zato se v enem kadru vidita oba.
   Na telefonu panel prekrije zaslon, zato mobilni posnetek ne pride v poštev.
-- Status: 📝 račun pripravljen (Claude, 2. 11.), čaka na snemanje (ti). ✅ Ponovno snemanje ta teden (Vladimir, 9. 11.): izboljšana izkušnja asistenta, stvari se na seznamu pojavljajo in izginjajo.
+- Status: 📝 račun pripravljen (Claude, 2. 11.), čaka na snemanje (ti). ✅ Ponovno snemanje **pet 13. 11. zjutraj**, pred #5 (Vladimir, 9. 11.; s čet 12. 11. prestavljeno 12. 11.): izboljšana izkušnja asistenta, stvari se na seznamu pojavljajo in izginjajo.
 
 ## Priprava pred snemanjem (ti)
 
@@ -72,6 +72,7 @@ Posnetek: `raw/hero-c-today`. Uporabi le, če A ali B ne uspe.
   **≤ 4 MB** (igra inline na iOS Safari) + `landing-hero-poster.jpg` (prvi kader, ista velikost).
   Ena datoteka za obe širini; pri 500 px se pomanjša, besedilo ni nujno berljivo, nosi ga gibanje.
 - Dokler datoteke ni, hero kaže današnjo `landing-engage.png`.
+- **v2 (13. 11., Claude) 📝**: `whatsnextaction/video/landing-hero/v2/landing-hero.mp4` + `-poster.jpg`, 19,9 s, 0,8 MB, 1600 × 1000, 30 fps, brez zvoka. Vir `raw/hero-a-canvas.mov` (A) in `raw/hero-b-canvas.mov` (to je kader B Inbox). Čakanje asistenta pospešeno 8–30×, polnjenje 1–2,5×. Ponovna izdelava: `landing-hero/v2/build.sh`. ✅ potrjeno (Vladimir, 13. 11.), kopirano v `wna_web` (prepisana v1 z 2. 11.).
 
 ## Reset demo (Claude prek MCP `wna-demo`)
 
